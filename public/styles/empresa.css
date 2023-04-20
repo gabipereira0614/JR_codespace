@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteudo-empresa{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 7rem 0 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.superior-empresa{
+    /* border: solid black 2px; */
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-empresa{
+    font-family: 'Nerko One', cursive;
+    font-size: 3rem;
+    color:var(--global-brand-secondary);
+}
+
+.imagem-empresa{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 1100px;
+    height: 300px;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 50px;
+}
+
+.central-empresa{
+    /* border: solid black 2px; */
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.inferior-empresa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 1100px;
+    margin-bottom: 2%;
+}
+.texto-empresa{
+    font-family: 'Lora', 'Arial';
+    text-align: justify;
+    align-items: center;
+    display: flex;
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+}
+.imagem-empresa2{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+}
+

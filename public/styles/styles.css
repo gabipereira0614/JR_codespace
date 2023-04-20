@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Nerko+One&family=Zen+Dots&display=swap');
+
+@import "./template.css";
+@import "./home.css";
+@import "./portifolio.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root {
+    --global-brand-secondary: #F25D07 ;
+    --brand-primary:#DDDDDD;
+}

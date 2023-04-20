@@ -1,0 +1,115 @@
+/* Conteúdo superior */
+.conteudo-superior{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 600px;
+    background-image: url(../img/man-builder-with-helmet-his-hands-copy-space.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-size:100%;
+    overflow:hidden;
+    align-content: center;
+    gap: 2rem;
+    padding: 7rem 2rem 0 2rem;
+}
+
+.container-texto-superior{
+    width: 45%;
+    height: 100%;
+}
+
+.titulo-superior{
+    font-family: 'Zen Dots', 'Arial';
+    font-size: 76px;
+    color:var(--global-brand-secondary);
+}
+
+.texto-superior{
+    font-family: 'Lora', 'Arial';
+    font-size: large;
+    font-weight: 600;
+    text-indent: 30px;
+}
+
+.container-carrossel{
+    width: 50%;
+    height: 80%;
+}
+
+.imagem-carrossel{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Conteúdo central */
+.conteudo-central{
+    text-align: center;
+}
+
+.titulo-central{
+    margin: 35px 0 35px 0;
+    font-family: 'Nerko One','Arial';
+    font-size: 70px;
+    color:var(--global-brand-secondary);
+}
+
+.cards-home{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.card-servico{
+    width: 20%;
+}
+
+.imagem-card{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.conteudo{
+    font-family: 'Nerko One','Arial';
+    width: 100%;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.texto-descricao{
+    margin-top: 10px;
+    font-family: 'Lora', 'Arial';
+    font-size: medium;
+}
+
+/* Conteúdo inferior */
+.conteudo-inferior{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0 35px 0;
+    gap: 3rem;
+
+}
+
+.titulo-inferior{
+    display: flex;
+    justify-content: center;
+    font-family: 'Nerko One',cursive;
+    font-size: 70px;
+    color:var(--global-brand-secondary);
+    margin: 35px 0 35px 0;
+}
+
+.imagem-novidade{
+    border-radius: 20px;
+}
+
+.container-texto-inferior{
+    font-family: 'Lora', 'Arial';
+    font-size: large;
+}
