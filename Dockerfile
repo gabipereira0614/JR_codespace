@@ -4,6 +4,7 @@ FROM php:7.4-apache
 # Atualizar imagem
 RUN apt-get update
 
+RUN apt-get install -y git-core 
 # Instalar bibliotecas necessarias
 RUN apt-get update && apt-get install -y \
     libzip-dev \
