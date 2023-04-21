@@ -40,10 +40,10 @@ RUN chmod -R 777 /var/www/html/public
 RUN chmod -R 777 /var/www/html/writable
 
 # Set environment variables for MySQL connection
-ENV DB_HOST = db_epdv \
-    DB_DATABASE = db_epdv \
-    DB_USERNAME = admin \
-    DB_PASSWORD = admin123
+ENV DB_HOST = localhost \
+    DB_DATABASE = jr_construcoes \
+    DB_USERNAME = root \
+    DB_PASSWORD = 1234
 
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 ENV APACHE_LOG_DIR /var/log/apache2

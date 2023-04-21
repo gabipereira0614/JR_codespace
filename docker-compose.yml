@@ -9,30 +9,30 @@ services:
     depends_on:
       - db
     environment:
-      DB_HOST: db_epdv
-      DB_DATABASE: db_epdv
-      DB_USERNAME: admin
-      DB_PASSWORD: admin123
+      DB_HOST: localhost
+      DB_DATABASE: jr_construcoes
+      DB_USERNAME: root
+      DB_PASSWORD: 1234
     ports:
-      - "8000:80"
+      - "8080:80"
     volumes:
       - .:/var/www/html
     networks:
-      - epdv
+      - jrConstrcoes
 
   db:
     image: mysql:8
-    container_name: db_epdv
+    container_name: db_jrConstrcoes
     environment:
-      MYSQL_DATABASE: db_epdv
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: admin123
-      MYSQL_ROOT_PASSWORD: admin123
+      MYSQL_DATABASE: jr_construcoes
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 1234
+      MYSQL_ROOT_PASSWORD: 1234
     ports:
       - "3306:3306"
     networks:
-      - epdv
+      - jrConstrcoes
 
 networks:
-  epdv:
+  jrConstrcoes:
     driver: bridge
