@@ -43,7 +43,7 @@ RUN chmod -R 777 /var/www/html/writable
 # Set environment variables for MySQL connection
 ENV DB_HOST = localhost \
     DB_DATABASE = jr_construcoes \
-    DB_USERNAME = root \
+    DB_USERNAME = db_jrConstrucoes \
     DB_PASSWORD = 1234
 
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public

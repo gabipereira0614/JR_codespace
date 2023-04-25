@@ -5,34 +5,34 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: jrContrucoes
+    container_name: app_jrConstrucoes
     depends_on:
       - db
     environment:
       DB_HOST: localhost
       DB_DATABASE: jr_construcoes
-      DB_USERNAME: root
+      DB_USERNAME: db_jrConstrucoes
       DB_PASSWORD: 1234
     ports:
-      - "8080:80"
+      - "8000:80"
     volumes:
       - .:/var/www/html
     networks:
-      - jrConstrcoes
+      - jrConstrucoes
 
   db:
     image: mysql:8
     container_name: db_jrConstrcoes
     environment:
       MYSQL_DATABASE: jr_construcoes
-      MYSQL_USER: root
+      MYSQL_USER: db_jrConstrucoes
       MYSQL_PASSWORD: 1234
       MYSQL_ROOT_PASSWORD: 1234
     ports:
       - "3306:3306"
     networks:
-      - jrConstrcoes
+      - jrConstrucoes
 
 networks:
-  jrConstrcoes:
+  jrConstrucoes:
     driver: bridge
