@@ -54,8 +54,8 @@ ENV APACHE_ERROR_LOG_DIR /var/log/apache2
 EXPOSE 80
 
 # Baixar as dependencias do projeto
-RUN composer install
-RUN composer update
+# RUN composer install
+# RUN composer update
 
 # Iniciar web service
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
