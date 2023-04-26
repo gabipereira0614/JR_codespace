@@ -22,7 +22,7 @@ services:
 
   db:
     image: mysql:8
-    container_name: db_jrConstrcoes
+    container_name: db_jrConstrucoes
     environment:
       MYSQL_DATABASE: jr_construcoes
       MYSQL_USER: db_jrConstrucoes
