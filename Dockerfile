@@ -14,6 +14,8 @@ RUN apt-get update && apt-get install -y \
 # Instalar extenções do php
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
+RUN apt install -y default-mysql-server
+
 # Instalar e atualizar dependencias do composer
 RUN apt-get update && apt-get install -y libicu-dev && docker-php-ext-install intl
 
