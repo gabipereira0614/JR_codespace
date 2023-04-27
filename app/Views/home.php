@@ -10,7 +10,7 @@
 <div class="container">
     <div class="conteudo-superior">
         <div class="container-texto-superior">
-            <h1 class="titulo-superior">Jr Construções</h1>
+            <h1 class="titulo-superior">Jr<br>Construções</h1>
             <p class="texto-superior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem distinctio ipsam dolores
                 aspernatur eligendi est odit incidunt nostrum obcaecati eos animi cumque repudiandae,
                 laudantium reprehenderit molestias assumenda laboriosam recusandae quisquam?</p>
