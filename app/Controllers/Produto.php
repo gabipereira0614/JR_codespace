@@ -10,7 +10,8 @@ class Produto extends BaseController
     public function index()
     {
         $produtos = new ProdutoModel;
+        $data["produtos"]=$produtos->getProdutos();
 
-        return json_encode($produtos->getProdutos);
+        return view("produtos", $data);
     }
 }
