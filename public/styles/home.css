@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 600px;
+    height: 85vh;
     background-image: url(../img/man-builder-with-helmet-his-hands-copy-space.jpg);
     background-repeat:no-repeat;
     background-size: cover;
@@ -32,16 +32,7 @@
     text-indent: 30px;
 }
 
-.container-carrossel{
-    width: 50%;
-    height: 80%;
-}
 
-.imagem-carrossel{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
 
 /* Conteúdo central */
 .conteudo-central{
@@ -50,7 +41,7 @@
 
 .titulo-central{
     margin: 35px 0 35px 0;
-    font-family: 'Nerko One','Arial';
+    font-family: 'Zen Dots','Arial';
     font-size: 70px;
     color:var(--global-brand-secondary);
 }
@@ -63,19 +54,19 @@
 }
 
 .card-servico{
-    width: 20%;
+    width: 23%;
+    box-shadow: 10px black;
 }
 
 .imagem-card{
     width: 100%;
     height: 50%;
-    border-radius: 20px;
 }
 
 .conteudo{
     font-family: 'Nerko One','Arial';
     width: 100%;
-    font-size: larger;
+    font-size: x-large;
     margin-top: 10px;
 }
 
@@ -85,13 +76,24 @@
     font-size: medium;
 }
 
+.container-carrossel{
+    overflow-x: visible;
+    width: 100%;
+    height: 400px;
+}
+
+.imagem-carrossel{
+    width: 100%;
+    height: 100%;
+}
+
 /* Conteúdo inferior */
 .conteudo-inferior{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 35px 0 35px 0;
+    margin: 35px 0 175px 0;
     gap: 3rem;
     text-align: center;
 }
@@ -99,7 +101,7 @@
 .titulo-inferior{
     display: flex;
     justify-content: center;
-    font-family: 'Nerko One',cursive;
+    font-family: 'Zen Dots', cursive;
     font-size: 70px;
     color:var(--global-brand-secondary);
     margin: 35px 0 35px 0;
@@ -139,21 +141,10 @@
         display: none;
     }
 
-    .container-carrossel{
-        padding: 0px;
-        margin-top: 10vh;
-        width: 100%;
-        height: 30vh;
-    }
-    
-    .imagem-carrossel{
-        width: 100%;
-        height: 30vh;
-        border-radius: 20px;
-    }
-
+    /* Conteúdo central */
     .conteudo-central{
         margin: 10px 0 10px 0;
+        justify-content: center;
     }
 
     .cards-home{
@@ -172,6 +163,18 @@
 
     .cards-home{
         gap: 0px;
+    }
+
+    .container-carrossel{
+        padding: 0px;
+        margin-top: 10vh;
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .imagem-carrossel{
+        width: 100%;
+        height: 30vh;
     }
 }
 
