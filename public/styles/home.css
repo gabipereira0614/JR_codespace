@@ -93,7 +93,7 @@
     align-items: center;
     margin: 35px 0 35px 0;
     gap: 3rem;
-
+    text-align: center;
 }
 
 .titulo-inferior{
@@ -114,7 +114,8 @@
     font-size: large;
 }
 
-@media (max-width: 600px){
+/* Tela pequena */
+@media (max-width: 540px){
     .conteudo-superior{
         display: block;
         flex-wrap: wrap;
@@ -141,7 +142,7 @@
     .container-carrossel{
         padding: 0px;
         margin-top: 10vh;
-        width: 90%;
+        width: 100%;
         height: 30vh;
     }
     
@@ -172,4 +173,19 @@
     .cards-home{
         gap: 0px;
     }
+}
+
+/* Tela média */
+@media (max-width: 720px){
+
+}
+
+/* Tela grande */
+@media (max-width: 960px){
+
+}
+
+/* Tela grande+ */
+@media (max-width: 1140px){
+
 }

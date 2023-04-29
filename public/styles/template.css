@@ -30,8 +30,8 @@ header{
 }
 
 .logo{
-    width: 50%;
-    height: 100%;
+    width: 130px;
+    height: 100px;
 }
 
 #navegacao{
@@ -83,4 +83,28 @@ footer{
     margin: 0 150px 0px 150px;
     font-family:'Arial' cursive;
     font-weight: 600;
+}
+
+/* Tela pequena */
+@media (max-width: 540px){
+    .logo{
+
+    }
+}
+
+/* Tela média */
+@media (max-width: 720px){
+    .logo{
+
+    }
+}
+
+/* Tela grande */
+@media (max-width: 960px){
+
+}
+
+/* Tela grande+ */
+@media (max-width: 1140px){
+
 }
