@@ -18,7 +18,6 @@ class ProdutoModel extends Model
         $builder = $this->db->table("produto p");
         $builder->select("p.*, ip.imagem");
         $builder->join("imagem_produto ip", "ip.fkproduto=p.id_produto");
-        $builder->groupBy("p.id_produto");
         $builder->orderBy("p.id_produto");
         $query = $builder->get();
         return $query->getResult();
