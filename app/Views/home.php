@@ -60,7 +60,7 @@
             </div>
         </div>
         <div class="container-carrossel">
-            <img src="../img/logo.jpeg" alt="logo" class="imagem-carrossel">
+            <img src="../img/deck2.jpeg" alt="logo" class="imagem-carrossel">
         </div>
     </div>
     <div class="conteudo-inferior">
