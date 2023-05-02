@@ -17,25 +17,22 @@
 
 <body>
 <header>
-    <nav id="logo-area">
+    <figure class="logo-area">
         <img src="../img/logo-sem-fundo.png" class="logo">
-    </nav>
-    <nav id="navegacao">
-        <div class="links">
-            <a href="./">Home</a>
-            <a href="./portifolio">Portifolio</a>
-            <a href="./produtos">Produtos</a>
-            <a href="./empresa">Empresa</a>
-            <a href="./contato">Contato</a>
-            
-        </div>
+    </figure>
+    <nav class="navegacao">
+        <a href="./">Home</a>
+        <a href="./portifolio">Portifolio</a>
+        <a href="./produtos">Produtos</a>
+        <a href="./empresa">Empresa</a>
+        <a href="./contato">Contato</a>
     </nav>
 </header>
 <main>
     <?= $this->renderSection('conteudo') ?>
 </main>
 <footer>
-    <p id="footer-text">
+    <p class="footer-text">
         2023 Jr Construções / Todos os direitos reservados &copy;
     </p>
 </footer>
