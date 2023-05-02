@@ -1,3 +1,14 @@
+@keyframes animação{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    100% {margin-left: -400%;}
+}
 /* Conteúdo superior */
 .conteudo-superior{
     display: flex;
@@ -82,8 +93,18 @@
     overflow-x: visible;
     width: 80%;
     height: 400px;
+    overflow: hidden;
+    float: left;
 }
-
+.container-carrossel .imagem-carrossel{
+    width: 500%;
+    animation-name: animação;/*animar a propriedade*/
+    animation-duration: 20s;/*definir um tempo pra animação*/
+    animation-iteration-count: infinite;
+}
+.container-carrossel .imagem-carrossel img{
+width: 19.9%;
+}
 .imagem-carrossel{
     width: 100%;
     height: 100%;
