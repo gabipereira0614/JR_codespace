@@ -8,21 +8,10 @@
     class Autenticacao extends BaseController {
         // responsavel por redirecionar o user parra a tela de login
         public function login(){
-
-            $email =\Config\Services::email();
-            $email->setFrom("dsetec@gmail.com","guarnieriStreet");
-            $email->setSubject("exemplo de envio de email"); 
-            $email->setTo("gomesyara145@gmail.com");
-            $email->setMessage("corpo do email - Texto");
-
-            if($email->send()){
-                echo "ok";
-            }else{
-            }
         if(session()->has("id_adm")){
             return redirect()->to(base_url("admin/produto"));
         }
-            return view("admin/home");
+            return view("admin");
         }
 
         public function sair(){
@@ -39,7 +28,7 @@
                 $adminModel = new AdminModel();
                 $id_adm = $adminModel->logar($email, $senha);
                 session()->set("id_adm", $id_adm);
-                return redirect()->to("/admin/produto");
+                return redirect()->to("admin/produto");
             } catch (Exception $erro) {
                 session()->setFlashdata("aviso-login", $erro->getMessage());
                 return redirect()->to("/admin");
