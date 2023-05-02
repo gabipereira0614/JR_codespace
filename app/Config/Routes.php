@@ -39,6 +39,14 @@ $routes->get('/empresa', 'Home::empresa');
 $routes->get('/contato', 'Home::contato');
 $routes->get('/login', 'Home::login');
 
+
+// login
+$routes->group("admin", function($routes){
+    $routes->get('','Admin\Home::index');
+    $routes->post('novo','Admin\Autenticacao::salvar');
+    $routes->post('logar', 'Admin\Autenticacao::logar');
+});
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

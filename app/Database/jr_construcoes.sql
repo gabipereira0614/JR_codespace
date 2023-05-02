@@ -45,7 +45,8 @@ CREATE TABLE  funcionario (
 CREATE TABLE  adm (
   id_adm int(11) NOT NULL AUTO_INCREMENT,
   nome varchar(50) NOT NULL,
-  senha char(10) NOT NULL,
+  email varchar(90) NOT NULL,
+  senha char(60) NOT NULL,
   telefone char(11) NOT NULL,
   PRIMARY KEY (id_adm)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
