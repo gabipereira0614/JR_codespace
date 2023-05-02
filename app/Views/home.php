@@ -70,13 +70,14 @@
     </div>
     <div class="conteudo-inferior">
         <h2 class="titulo-inferior">Novidades</h2>
-        <img src="../img/logo.jpeg" alt="logo" class="imagem-novidade">
-        <div class="container-texto-inferior">
-            <p> ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Culpa perspiciatis fuga possimus nulla est maiores consequatur ut. Aut, amet </p>
-            <p>, deserunt eveniet id iste rem, vel aspernatur neque consectetur ullam!</p>
+        <div class="conteudo-novidades">
+            <img src="../img/logo.jpeg" alt="logo" class="imagem-novidade">
+            <div class="container-texto-inferior">
+                <p> ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Culpa perspiciatis fuga possimus nulla est maiores consequatur ut. Aut, amet </p>
+                <p>, deserunt eveniet id iste rem, vel aspernatur neque consectetur ullam!</p>
+            </div>
         </div>
-
     </div>
 </div>
 <?= $this->endSection() ?>
