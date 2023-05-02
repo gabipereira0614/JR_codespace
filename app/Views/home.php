@@ -10,7 +10,7 @@
 <div class="container">
     <div class="conteudo-superior">
         <div class="container-texto-superior">
-            <h1 class="titulo-superior">Jr Construções</h1>
+            <h1 class="titulo-superior">Jr<br>Construções</h1><br>
             <p class="texto-superior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem distinctio ipsam dolores
                 aspernatur eligendi est odit incidunt nostrum obcaecati eos animi cumque repudiandae,
                 laudantium reprehenderit molestias assumenda laboriosam recusandae quisquam?</p>
@@ -21,12 +21,9 @@
                 culpa. Rem iste natus sapiente asperiores consequuntur consequatur harum voluptates
                 quibusdam magnam. Perspiciatis molestias beatae nostrum. Totam?</p>
         </div>
-        <div class="container-carrossel">
-            <img src="../img/logo.jpeg" alt="logo" class="imagem-carrossel">
-        </div>
     </div>
     <div class="conteudo-central">
-        <h2 class="titulo-central">Tipos de Serviços</h2>
+        <h2 class="titulo-central">Serviços Jr</h2>
         <div class="cards-home">
             <div class="card-servico">
                 <img src="../img/construcao.jpeg" alt="" class="imagem-card">
@@ -62,10 +59,17 @@
                 </div>
             </div>
         </div>
+        <section class="container-carrossel">
+            <div class="imagem-carrossel">
+                <img src="../img/deck2.jpeg" alt="foto1" height="400" width="100%"> 
+                <img src="../img/construcao.jpeg" alt="foto2" height="400" width="100%">
+                <img src="../img/carpintaria1.jpeg" alt="foto2" height="400" width="100%">
+                <img src="../img/pergolado.jpeg" alt="foto2" height="400" width="100%">
+            </div>
+        </section>
     </div>
-    <h2 class="titulo-inferior">Novidades da Jr</h2>
     <div class="conteudo-inferior">
-
+        <h2 class="titulo-inferior">Novidades</h2>
         <img src="../img/logo.jpeg" alt="logo" class="imagem-novidade">
         <div class="container-texto-inferior">
             <p> ipsum dolor sit amet consectetur adipisicing elit.</p>

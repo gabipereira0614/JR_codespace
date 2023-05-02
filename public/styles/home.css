@@ -1,13 +1,24 @@
+@keyframes animação{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    100% {margin-left: -400%;}
+}
 /* Conteúdo superior */
 .conteudo-superior{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 600px;
+    height: 85vh;
     background-image: url(../img/man-builder-with-helmet-his-hands-copy-space.jpg);
     background-repeat:no-repeat;
     background-size: cover;
-    background-size:100%;
+    background-size: 100%;
     overflow:hidden;
     align-content: center;
     gap: 2rem;
@@ -32,25 +43,18 @@
     text-indent: 30px;
 }
 
-.container-carrossel{
-    width: 50%;
-    height: 80%;
-}
 
-.imagem-carrossel{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
 
 /* Conteúdo central */
 .conteudo-central{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo-central{
     margin: 35px 0 35px 0;
-    font-family: 'Nerko One','Arial';
+    font-family: 'Zen Dots','Arial';
     font-size: 70px;
     color:var(--global-brand-secondary);
 }
@@ -60,22 +64,22 @@
     flex-wrap: nowrap;
     justify-content: center;
     gap: 6rem;
+    text-align: center;
 }
 
 .card-servico{
-    width: 20%;
+    width: 23%;
 }
 
 .imagem-card{
     width: 100%;
     height: 50%;
-    border-radius: 20px;
 }
 
 .conteudo{
     font-family: 'Nerko One','Arial';
     width: 100%;
-    font-size: larger;
+    font-size: x-large;
     margin-top: 10px;
 }
 
@@ -85,21 +89,42 @@
     font-size: medium;
 }
 
+.container-carrossel{
+    overflow-x: visible;
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    float: left;
+}
+.container-carrossel .imagem-carrossel{
+    width: 500%;
+    animation-name: animação;/*animar a propriedade*/
+    animation-duration: 20s;/*definir um tempo pra animação*/
+    animation-iteration-count: infinite;
+}
+.container-carrossel .imagem-carrossel img{
+width: 19.9%;
+}
+.imagem-carrossel{
+    width: 100%;
+    height: 100%;
+}
+
 /* Conteúdo inferior */
 .conteudo-inferior{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 35px 0 35px 0;
+    margin: 35px 0 175px 0;
     gap: 3rem;
-
+    text-align: center;
 }
 
 .titulo-inferior{
     display: flex;
     justify-content: center;
-    font-family: 'Nerko One',cursive;
+    font-family: 'Zen Dots', cursive;
     font-size: 70px;
     color:var(--global-brand-secondary);
     margin: 35px 0 35px 0;
@@ -112,4 +137,82 @@
 .container-texto-inferior{
     font-family: 'Lora', 'Arial';
     font-size: large;
+}
+
+/* Tela pequena */
+@media (max-width: 540px){
+    .conteudo-superior{
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        gap: 0px;
+        padding: 7rem 1rem 0 1rem;
+    }
+
+    .container-texto-superior{
+        width: 100%;
+        height: 100%;
+    }
+
+    .titulo-superior{
+        font-size: 40px;
+    }
+
+    .texto-superior{
+        display: none;
+    }
+
+    /* Conteúdo central */
+    .conteudo-central{
+        margin: 10px 0 10px 0;
+        justify-content: center;
+    }
+
+    .cards-home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        gap: 0px;
+    }
+
+    .card-servico{
+        width: 70%;
+        margin: 10px;
+    }
+
+    .cards-home{
+        gap: 0px;
+    }
+
+    .container-carrossel{
+        padding: 0px;
+        margin-top: 10vh;
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .imagem-carrossel{
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+/* Tela média */
+@media (max-width: 720px){
+
+}
+
+/* Tela grande */
+@media (max-width: 960px){
+
+}
+
+/* Tela grande+ */
+@media (max-width: 1140px){
+
 }
