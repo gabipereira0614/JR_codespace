@@ -59,9 +59,14 @@
                 </div>
             </div>
         </div>
-        <div class="container-carrossel">
-            <img src="../img/deck2.jpeg" alt="logo" class="imagem-carrossel">
-        </div>
+        <section class="container-carrossel">
+            <div class="imagem-carrossel">
+                <img src="../img/deck2.jpeg" alt="foto1" height="400" width="100%"> 
+                <img src="../img/construcao.jpeg" alt="foto2" height="400" width="100%">
+                <img src="../img/carpintaria1.jpeg" alt="foto2" height="400" width="100%">
+                <img src="../img/pergolado.jpeg" alt="foto2" height="400" width="100%">
+            </div>
+        </section>
     </div>
     <div class="conteudo-inferior">
         <h2 class="titulo-inferior">Novidades</h2>
