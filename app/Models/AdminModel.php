@@ -22,7 +22,7 @@ class AdminModel extends Model
 
     public function logar($email, $senha){
         $admin = $this->db->query("SELECT id_adm, nome, senha 
-            FROM admin WHERE email=?", [$email])->getFirstRow("array");
+            FROM adm WHERE email=?", [$email])->getFirstRow("array");
 
         if(!$admin){
             throw new Exception("Senha incorreta ou usuário não encontrado");

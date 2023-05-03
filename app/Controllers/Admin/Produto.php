@@ -8,25 +8,14 @@ use App\Models\MarcaModel;
 
 class Produto extends BaseController
 {
-    public function index($id = 0)
+    public function index()
     {
-
-        $produtoModel = new ProdutoModel();
-        $dados["produtos"] = $produtoModel->findAll();
-
-        if($id != 0){
-            $produto = $produtoModel->find($id);
-            if(!$produto){
-                session()->setFlashdata("tipo","danger");
-                session()->setFlashdata("mensagem","Produto não encontrado!");
-                return redirect()->to(base_url("/admin/produto"));
-            }
-            $dados["produto"] = $produto;
-        }
-        return view("admin/produto", $dados);
+        $data["produtos"]=123;
+        return view("admin/produtos",$data);
     }
     public function deletar($id)
     {
+        
         $produtoModel = new ProdutoModel();
         if($produtoModel->delete($id)){
             session()->setFlashdata("tipo", "success");

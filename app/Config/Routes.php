@@ -47,6 +47,12 @@ $routes->group("admin", function($routes){
     $routes->post('logar', 'Admin\Autenticacao::logar');
 });
 
+$routes->group("admin", function($routes){
+    $routes->get('produtos','Admin\Produto::index');
+    $routes->post('novo','Admin\Autenticacao::salvar');
+    $routes->post('logar', 'Admin\Autenticacao::logar');
+});
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
