@@ -95,3 +95,48 @@
     color:var(--global-brand-secondary);
     /* margin-top: 1%; */
 }
+/* Tela pequena */
+@media (max-width: 540px){
+
+    .central-contato{
+        flex-wrap: nowrap;
+    }
+    footer{
+        height: 40px;
+    }
+    
+    .footer-text{
+        margin: 0 15px;
+        font-size: small;
+    }
+}
+
+/* Tela média */
+@media (max-width: 720px){
+    .conteudo-contato{
+        width: 100%;
+        display: flex;
+    }
+    .central-contato{
+        width: 100%;
+        gap: 1rem;
+        display: flex;
+    }
+    .foot{
+        height: 50px;
+    }
+
+    .footer-text{
+        margin: 0 15px;
+        font-size: large;
+    }
+}
+
+/* Tela grande */
+@media (max-width: 960px){
+
+}
+
+/* Tela grande+ */
+@media (max-width: 1140px){
+}
