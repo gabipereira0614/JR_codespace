@@ -73,3 +73,67 @@
     border-radius: 20px;
 }
 
+@media (max-width: 540px){
+    .superior-empresa{
+    width: 100%;
+    display: flex;
+}
+.imagem-empresa2{
+    height: 340px;
+    width: 400px;
+   
+}
+.central-empresa{
+    padding:20px;
+    gap:1rem;
+}
+.central-empresa .imagem-empresa2{
+    order:-1;
+}
+.inferior-empresa{
+    gap:1rem;
+}
+    footer{
+        height: 40px;
+    }
+    
+    .footer-text{
+        margin: 0 15px;
+        font-size: small;
+    }
+}
+
+/* Tela média */
+@media (max-width: 720px){
+    .superior-empresa{
+        width: 100%;
+        display: flex;
+    }
+    .central-empresa{
+        padding:20px;
+        gap:1rem;
+    }
+    .central-empresa .imagem-empresa2{
+        order:-1;
+    }
+    .inferior-empresa{
+        gap:1rem;
+    }
+    .footer{
+        height: 50px;
+    }
+
+    .footer-text{
+        margin: 0 15px;
+        font-size: large;
+    }
+}
+
+/* Tela grande */
+@media (max-width: 960px){
+
+}
+
+/* Tela grande+ */
+@media (max-width: 1140px){
+}
