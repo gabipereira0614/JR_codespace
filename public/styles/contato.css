@@ -95,3 +95,14 @@
     color:var(--global-brand-secondary);
     /* margin-top: 1%; */
 }
+
+
+@media (max-width: 540px){
+.container-contato{
+    background-color: blue;
+}
+
+.conteudo-contato{
+    
+}
+}

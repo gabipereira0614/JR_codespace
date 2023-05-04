@@ -10,13 +10,13 @@ class Produto extends BaseController
 {
     public function index()
     {
-        $data["produtos"]=123;
-        return view("admin/produtos",$data);
+        $produtoModel = new ProdutoModel();
+        $data["produtos"]= $produtoModel->findall();
     }
     public function deletar($id)
     {
         
-        $produtoModel = new ProdutoModel();
+       
         if($produtoModel->delete($id)){
             session()->setFlashdata("tipo", "success");
             session()->setFlashdata("mensagem","Item exluído com sucesso");

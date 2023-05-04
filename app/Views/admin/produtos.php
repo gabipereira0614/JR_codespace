@@ -1,46 +1,60 @@
+<?php
+$id_produto = '';
+$nome_produto = '';
+
+
+if(isset($produto)){
+    $idproduto =  $marca["id_produto"];
+    $nome = $marca["nome_produto"];
+}
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-    <main class="container-produto">
-        <h1>gerenciar produtos</h1>
-        <?= form_open(base_url("/admin/Produto/cadastrar")) ?>
+    <main class="container">
+    <?php if (session()->has("tipo")) : ?>
+    <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
+        <?= session("mensagem") ?>
+    </div>
+<?php endif; ?>
+        <?= form_open_multipart(base_url("admin/marcas/salvar"))?>
         <div class="mb-3">
-            <label for="idproduto" class="form-label">Código do produto</label>
-            <input type="text" class="form-control" id="idproduto" name="idproduto" readonly>
+            <label for="idmarca" class="form-label">Código Poduto</label>
+            <input type="text" class="form-control" id="idmarca" name="idmarca" value="<?= $idproduto ?>" readonly>
         </div>
         <div class="mb-3">
-            <label for="nome" class="form-label">Nome do produto</label>
-            <input type="text" class="form-control" id="nome" name="nome">
+            <label for="nome" class="form-label">Nome Marca:</label>
+            <input type="text" class="form-control" id="nome" name="nome" value="<?= $nome ?>">
+        </div>  
+        <div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
-        <div class="mb-3">
-            <label for="preco" class="form-label">Preço</label>
-            <input type="text" class="form-control" id="preco" name="preco">
-        </div>
-        <button type="submit" class="btn btn-primary">Salvar</button>
-        <button type="reset" class="btn btn-warning">Limpar</button>
+
         <?= form_close() ?>
-        <h1>Produtos cadastrados</h1>
+
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
+                    <th scope="col">id</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">Preço</th>
+                    <th scope="col">Url-Imagem</th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($produtos as $produto) : ?>
                     <tr>
-                        <th scope="row"><?= $produto["idproduto"] ?></th>
+                        <th scope="row"><?= $produto["id_produto"] ?></th>
                         <td><?= $produto["nome"] ?></td>
                         <td><?= $produto["preco"] ?></td>
                         <td>EXCLUIR</td>
