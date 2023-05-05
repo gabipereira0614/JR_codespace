@@ -7,10 +7,10 @@ use CodeIgniter\Model;
 class ProdutoModel extends Model
 {
     protected $table            = 'produto';
-    protected $primaryKey       = 'idproduto';
+    protected $primaryKey       = 'id_produto';
     protected $useAutoIncrement = true;
 
-    protected $allowedFields = ["nome", "qtd_produto", "preco"];
+    protected $allowedFields = ["nome_produto"];
 
 
     public function getProdutos(){
@@ -21,6 +21,13 @@ class ProdutoModel extends Model
         $builder->orderBy("p.id_produto");
         $query = $builder->get();
         return $query->getResult();
+    }
+
+    public function saveAs($arr) {
+        $builder = $this->db->table("produto");
+        $builder->insert($arr);
+
+        return true;
     }
 
 }
