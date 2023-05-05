@@ -106,14 +106,30 @@ footer{
         position: absolute;
         top: 116px;
         right: 0;
-        width: 50vw;
+        width: 100vw;
         height: 40vh;
         align-items: center;
         justify-content: space-around;
+        transform: translateX(100%);
     }
 
     .nav-list li{
         margin-left: 0;
+    }
+
+    .nav-list.active{
+        transform: translateX(0%);
+    }
+
+    .mobile-menu{
+        cursor: pointer;
+    }
+
+    .mobile-menu div{
+        width: 32px;
+        height: 3px;
+        background: #F25D07;
+        margin: 8px;
     }
 }
 

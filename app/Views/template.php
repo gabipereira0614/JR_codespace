@@ -10,11 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="imagem/png" href="../img/logo.jpeg">
     <link rel="stylesheet" href="./styles/styles.css">
-    <script src="./js/menuMobile.js" defer></script>
+    <script src="./js/navbarjs" defer></script>
     <?= $this->renderSection('css') ?>
     <title>Jr Construções</title>
 </head>
-
 <body>
 <header>
     <nav id="nav">
