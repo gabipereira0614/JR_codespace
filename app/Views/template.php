@@ -10,22 +10,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="imagem/png" href="../img/logo.jpeg">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./js/menuMobile.js" defer></script>
     <?= $this->renderSection('css') ?>
-
     <title>Jr Construções</title>
 </head>
 
 <body>
 <header>
-    <figure class="logo-area">
-        <img src="../img/logo-sem-fundo.png" class="logo">
-    </figure>
-    <nav class="navegacao">
-        <a href="./">Home</a>
-        <a href="./portifolio">Portifolio</a>
-        <a href="./produtos">Produtos</a>
-        <a href="./empresa">Empresa</a>
-        <a href="./contato">Contato</a>
+    <nav id="nav">
+        <figure class="logo-area">
+            <img src="../img/logo-sem-fundo.png" class="logo">
+        </figure>
+        <div class="mobile-menu">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="./">Home</a></li>
+            <li><a href="./portifolio">Portifolio</a></li>
+            <li><a href="./produtos">Produtos</a></li>
+            <li><a href="./empresa">Empresa</a></li>
+            <li><a href="./contato">Contato</a></li>
+        </ul>
     </nav>
 </header>
 <main>

@@ -1,0 +1,31 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+    .card-body {
+        text-align: center;
+}
+
+/* Tela pequena */
+@media (max-width: 540px){
+    /* .card-body {
+        
+        text-align: center;
+        
+    } */
+    footer{
+        height: 40px;
+    }
+    
+    .footer-text{
+        margin: 0 15px;
+        font-size: small;
+    }
+}

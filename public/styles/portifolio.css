@@ -33,3 +33,48 @@
     border: solid black 1px;
     border-radius: 20px;
 }
+/* Tela pequena */
+@media (max-width: 540px){
+    .imagem{
+        height: 350px;
+        width: 350px;
+    }
+    #conteudo-portifolio {
+    padding-top: 110px;
+    }
+    .titulo-portifolio {
+    height: 120px;
+    }
+    footer{
+        height: 40px;
+    }
+    
+    .footer-text{
+        margin: 0 15px;
+        font-size: small;
+    }
+}
+
+/* Tela média */
+@media (max-width: 720px){
+    #conteudo-portifolio {
+        padding-top: 110px;
+        }
+    .footer{
+        height: 50px;
+    }
+
+    .footer-text{
+        margin: 0 15px;
+        font-size: large;
+    }
+}
+
+/* Tela grande */
+@media (max-width: 960px){
+
+}
+
+/* Tela grande+ */
+@media (max-width: 1140px){
+}
