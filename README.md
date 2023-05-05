@@ -1,4 +1,6 @@
 ## entrar no mysql shell: mysql -u root -h db_jrConstrucoes -p
+## senha=1234
+## use jr_construcoes;
 ## sair do mysql shell: exit
 # CodeIgniter 4 Application Starter
 

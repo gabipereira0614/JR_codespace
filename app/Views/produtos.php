@@ -1,4 +1,9 @@
 <?= $this->extend('template') ?>
+<?= $this->section('css') ?>
+<link rel="stylesheet" href="./styles/produto.css">
+<link rel="stylesheet" href="./styles/template.css">
+<?= $this->endSection() ?>
+
 <?= $this->section('conteudo') ?>
 <div class="row">
     <?php foreach ($this->data['produtos'] as $produto): ?>    
