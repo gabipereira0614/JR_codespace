@@ -222,7 +222,7 @@ width: 19.9%;
     
     .imagem-novidade{
         width: 90%;
-        height: 200px;
+        height: 250px;
         border-radius: 20px;
     }
     
@@ -435,7 +435,7 @@ width: 19.9%;
 }
 
 /* Tela grande+ */
-@media (max-width: 1140px){
+@media screen and (min-width: 961px) and (max-width: 1140px){
     /* Conteúdo Superior */
     .container-texto-superior{
         width: 80%;
