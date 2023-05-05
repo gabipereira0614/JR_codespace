@@ -95,6 +95,8 @@
     color:var(--global-brand-secondary);
     /* margin-top: 1%; */
 }
+
+
 /* Tela pequena */
 @media (max-width: 540px){
 
@@ -140,3 +142,4 @@
 /* Tela grande+ */
 @media (max-width: 1140px){
 }
+
