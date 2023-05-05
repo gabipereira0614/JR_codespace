@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?= $this->extend('template') ?>
+<?= $this->section('css') ?>
+<link rel="stylesheet" href="./styles/login.css">
+<?= $this->endSection() ?>
+<?= $this->section('conteudo') ?> 
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,14 +13,31 @@
     <title>Novo Administrador</title>
 </head>
 
-<body>
+<body> -->
 
     <?php if (session()->has("aviso-login")) : ?>
         <h2><?= session("aviso-login") ?></h2>
     <?php endif; ?>
 
     <?= form_open(base_url("admin/logar")) ?>
-    <div>
+    
+        <div class="centralizar-login">
+            <fieldset>
+                <legend>
+                    <img class="imagem-logo" src="./img/perfil-de-usuario.png" alt="">
+                </legend>
+
+                <div class="formulario-login">
+                    <label for="email"></label>
+                    <input type="email" class="inputs" placeholder="Email" name="email">
+                    <label for="senha"></label>
+                    <input type="password" class="inputs" placeholder="Senha" name="senha">
+                    <button type="submit" class="botao-contato">ENTRAR</button>
+                </div>
+            </fieldset>
+        </div>
+    
+    <!-- <div>
         <label for="email">Email</label>
         <input type="email" name="email">
     </div>
@@ -25,7 +47,7 @@
     </div>
     <div>
         <button type="submit">Entrar</button>
-    </div>
+    </div> -->
     <?= form_close() ?>
 
     <hr>
@@ -54,6 +76,7 @@
         <button type="submit">OK</button>
     </div>
     <?= form_close() ?>
-</body>
+<!-- </body>
 
-</html>
+</html> -->
+<?= $this->endSection() ?>
