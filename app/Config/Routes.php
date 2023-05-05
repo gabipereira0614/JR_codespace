@@ -46,12 +46,19 @@ $routes->group("admin", function($routes){
     $routes->post('novo','Admin\Autenticacao::salvar');
     $routes->post('logar', 'Admin\Autenticacao::logar');
 });
+// admin->produto
 
-$routes->group("admin", function($routes){
     $routes->get('produtos','Admin\Produto::index');
     $routes->post('novo','Admin\Autenticacao::salvar');
     $routes->post('logar', 'Admin\Autenticacao::logar');
-});
+
+
+// produtos
+$routes->get('produto', "Admin\Produto::index");
+$routes->get("produto/(:num)", "Admin\Produto::index/$1");
+$routes->post('produto/salvar', "Admin\Produto::salvar");
+$routes->get('produto/deletar/(:num)', "Admin\Produto::deletar/$1");
+
 
 /*
  * --------------------------------------------------------------------

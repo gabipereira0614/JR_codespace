@@ -1,11 +1,13 @@
 <?php
 $id_produto = '';
 $nome_produto = '';
+$preco = '';
 
 
 if(isset($produto)){
-    $idproduto =  $marca["id_produto"];
-    $nome = $marca["nome_produto"];
+    $id_produto =  $produto["id_produto"];
+    $nome_produto = $produto["nome_produto"];
+    $preco = $produto["preco"];
 }
 
 ?>
@@ -28,15 +30,19 @@ if(isset($produto)){
         <?= session("mensagem") ?>
     </div>
 <?php endif; ?>
-        <?= form_open_multipart(base_url("admin/marcas/salvar"))?>
+        <?= form_open_multipart(base_url("admin/produto/salvar"))?>
         <div class="mb-3">
             <label for="idmarca" class="form-label">Código Poduto</label>
-            <input type="text" class="form-control" id="idmarca" name="idmarca" value="<?= $idproduto ?>" readonly>
+            <input type="text" class="form-control" id="$id_produto" name="$id_produto" value="<?= $id_produto ?>" readonly>
         </div>
         <div class="mb-3">
-            <label for="nome" class="form-label">Nome Marca:</label>
-            <input type="text" class="form-control" id="nome" name="nome" value="<?= $nome ?>">
+            <label for="nome" class="form-label">Nome produto:</label>
+            <input type="text" class="form-control" id="nome_produto" name="nome_produto" value="<?= $nome_produto ?>">
         </div>  
+        <div class="mb-3">
+            <label for="preco" class="form-label">Preco produto</label>
+            <input type="text" class="form-control" id="preco" name="preco" value="<?= $preco ?>">
+        </div> 
         <div>
         <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
@@ -48,14 +54,14 @@ if(isset($produto)){
                 <tr>
                     <th scope="col">id</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">Url-Imagem</th>
+                    <th scope="col">Preco</th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($produtos as $produto) : ?>
                     <tr>
                         <th scope="row"><?= $produto["id_produto"] ?></th>
-                        <td><?= $produto["nome"] ?></td>
+                        <td><?= $produto["nome_produto"] ?></td>
                         <td><?= $produto["preco"] ?></td>
                         <td>EXCLUIR</td>
                     </tr>

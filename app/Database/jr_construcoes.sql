@@ -112,7 +112,6 @@ CREATE TABLE  pedido_produto (
 CREATE TABLE  produto (
   id_produto int(11) NOT NULL AUTO_INCREMENT,
   nome_produto varchar(50) NOT NULL,
-  qtd_produto int(11) NOT NULL,
   preco decimal(10,2) NOT NULL,
   PRIMARY KEY (id_produto)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -130,18 +129,18 @@ CREATE TABLE  imagem_produto (
 -- Extraindo dados da tabela produto
 --
 
-insert into produto ( nome_produto, qtd_produto, preco) values ( 'Wine - Red, Black Opal Shiraz', 48, 28.17);
-insert into produto ( nome_produto, qtd_produto, preco) values ( 'Syrup - Monin - Blue Curacao', 12, 28.61);
-insert into produto ( nome_produto, qtd_produto, preco) values ( 'Glucose', 69, 67.55);
-insert into produto ( nome_produto, qtd_produto, preco) values ( 'Whmis Spray Bottle Graduated', 2, 21.58);
-insert into produto ( nome_produto, qtd_produto, preco) values ( 'Water - Spring Water, 355 Ml', 43, 69.68);
-insert into produto ( nome_produto, qtd_produto, preco) values ( 'Cheese - Taleggio D.o.p.', 92, 62.62);
-insert into produto ( nome_produto, qtd_produto, preco) values ( 'Lamb - Shanks', 64, 35.05);
-insert into produto ( nome_produto, qtd_produto, preco) values ( 'Papadam', 35, 82.95);
-insert into produto ( nome_produto, qtd_produto, preco) values ( 'Salt - Kosher', 19, 68.64);
-insert into produto ( nome_produto, qtd_produto, preco) values ( 'Venison - Ground', 63, 46.52);
-insert into produto ( nome_produto, qtd_produto, preco) values ( 'Calypso - Strawberry Lemonade', 35, 80.64);
-insert into produto ( nome_produto, qtd_produto, preco) values ( 'Bread - Focaccia Quarter', 77, 3.59);
+insert into produto ( nome_produto , preco) values ( 'Wine - Red, Black Opal Shiraz', 28.17);
+insert into produto ( nome_produto , preco) values ( 'Syrup - Monin - Blue Curacao',  28.61);
+insert into produto ( nome_produto , preco) values ( 'Glucose', 67.55);
+insert into produto ( nome_produto , preco) values ( 'Whmis Spray Bottle Graduated', 21.58);
+insert into produto ( nome_produto , preco) values ( 'Water - Spring Water, 355 Ml', 69.68);
+insert into produto ( nome_produto , preco) values ( 'Cheese - Taleggio D.o.p.', 62.62);
+insert into produto ( nome_produto , preco) values ( 'Lamb - Shanks', 35.05);
+insert into produto ( nome_produto , preco) values ( 'Papadam', 82.95);
+insert into produto ( nome_produto , preco) values ( 'Salt - Kosher', 68.64);
+insert into produto ( nome_produto , preco) values ( 'Venison - Ground', 46.52);
+insert into produto ( nome_produto , preco) values ( 'Calypso - Strawberry Lemonade', 80.64);
+insert into produto ( nome_produto , preco) values ( 'Bread - Focaccia Quarter', 3.59);
 
 
 
