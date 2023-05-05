@@ -20,14 +20,20 @@ class Produto extends BaseController
 
         $regras =[
             'nome_produto'=>'required|min_length[2]',
+            'preco'=>'required|decimal',
         ];
 
         $mensagem =[
             'nome_produto'=>[
                 'required'=>'o nome e necessario',
                 'min_length[2]'=>'o nome precisa ser valido'
+            ],
+              'preco'=>[
+                'required'=>'o preco e necessario',
+                'decimal'=>'digite um preco valido'
               ]
             ];
+
             if($this->validate($regras,$mensagem)){
         if($modelProduto->save($dadosEnviados)){
             session()->setFlashdata("tipo", "success");

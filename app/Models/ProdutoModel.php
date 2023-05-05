@@ -10,7 +10,7 @@ class ProdutoModel extends Model
     protected $primaryKey       = 'id_produto';
     protected $useAutoIncrement = true;
 
-    protected $allowedFields = ["nome_produto"];
+    protected $allowedFields = ["nome_produto","preco"];
 
 
     public function getProdutos(){

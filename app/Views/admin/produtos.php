@@ -1,11 +1,13 @@
 <?php
 $id_produto = '';
 $nome_produto = '';
+$preco = '';
 
 
 if(isset($produto)){
     $id_produto =  $produto["id_produto"];
     $nome_produto = $produto["nome_produto"];
+    $preco = $produto["preco"];
 }
 
 ?>
@@ -38,8 +40,8 @@ if(isset($produto)){
             <input type="text" class="form-control" id="nome_produto" name="nome_produto" value="<?= $nome_produto ?>">
         </div>  
         <div class="mb-3">
-            <label for="nome" class="form-label">Preco produto</label>
-            <input type="text" class="form-control" id="nome_produto" name="nome_produto" value="<?= $nome_produto ?>">
+            <label for="preco" class="form-label">Preco produto</label>
+            <input type="text" class="form-control" id="preco" name="preco" value="<?= $preco ?>">
         </div> 
         <div>
         <button class="btn btn-primary" type="submit">Submit form</button>
@@ -52,7 +54,7 @@ if(isset($produto)){
                 <tr>
                     <th scope="col">id</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">Url-Imagem</th>
+                    <th scope="col">Preco</th>
                 </tr>
             </thead>
             <tbody>
