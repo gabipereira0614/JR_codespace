@@ -50,12 +50,10 @@ legend{
 .centralizar-login {
     flex-wrap: wrap;
     display: flex;
-    width: 300px;
     height: 200px;
-    margin: 0;
     gap: 1rem;
     justify-content: center;
-    align-items: center;
+
 }
 .inputs{
     height: 1.5rem;
