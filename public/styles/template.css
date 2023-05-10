@@ -133,7 +133,7 @@ footer{
         margin: 8px;
     }
 
-    @keyframe navLinkFade{
+    @keyframes navLinkFade{
         from{
             opacity: 0;
             transform: translateX(50px);
@@ -193,7 +193,7 @@ footer{
         margin: 8px;
     }
 
-    @keyframe navLinkFade{
+    @keyframes navLinkFade{
         from{
             opacity: 0;
             transform: translateX(50px);
