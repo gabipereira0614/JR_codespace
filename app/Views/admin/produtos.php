@@ -2,12 +2,13 @@
 $id_produto = '';
 $nome_produto = '';
 $preco = '';
-
+$imagem ='';
 
 if(isset($produto)){
     $id_produto =  $produto["id_produto"];
     $nome_produto = $produto["nome_produto"];
     $preco = $produto["preco"];
+    $imagem = $produto["imagem"];
 }
 
 ?>
@@ -32,8 +33,8 @@ if(isset($produto)){
 <?php endif; ?>
         <?= form_open_multipart(base_url("admin/produto/salvar"))?>
         <div class="mb-3">
-            <label for="idmarca" class="form-label">Código Poduto</label>
-            <input type="text" class="form-control" id="$id_produto" name="$id_produto" value="<?= $id_produto ?>" readonly>
+            <label for="idproduto" class="form-label">Código Poduto</label>
+            <input type="text" class="form-control" id="id_produto" name="id_produto" value="<?= $id_produto ?>" readonly>
         </div>
         <div class="mb-3">
             <label for="nome" class="form-label">Nome produto:</label>
@@ -55,6 +56,7 @@ if(isset($produto)){
                     <th scope="col">id</th>
                     <th scope="col">Nome</th>
                     <th scope="col">Preco</th>
+                    <th scope="col">imagem</th>
                 </tr>
             </thead>
             <tbody>
@@ -63,7 +65,8 @@ if(isset($produto)){
                         <th scope="row"><?= $produto["id_produto"] ?></th>
                         <td><?= $produto["nome_produto"] ?></td>
                         <td><?= $produto["preco"] ?></td>
-                        <td>EXCLUIR</td>
+                        <td><a href="/admin/produto/deletar/<?=$produto["id_produto"]?>">Excluir</a>
+                    <?=anchor(base_url("/admin/produto/".$produto['id_produto']),"Alterar")?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

@@ -10,7 +10,7 @@ class Produto extends BaseController
     public function index()
     {
         $produtos = new ProdutoModel;
-        $data["produtos"]=$produtos->getProdutos();
+        $data["produtos"]=$produtos->findall();
 
         return view("produtos", $data);
     }
