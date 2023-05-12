@@ -26,12 +26,12 @@
                 </div>
             </fieldset>
         </div>
-    
-   
     <?php if (session()->has("aviso")) : ?>
         <h2><?= session("aviso") ?></h2>
     <?php endif; ?>
     <?= form_close() ?>
+
+
     <?= form_open("admin/novo") ?>
     <div>
         <label for="nome">Nome</label>

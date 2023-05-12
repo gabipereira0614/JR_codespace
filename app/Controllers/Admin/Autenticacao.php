@@ -11,7 +11,7 @@
         if(session()->has("id_adm")){
             return redirect()->to(base_url("admin/produto"));
         }
-            return view("admin");
+            return view("/admin");
         }
 
         public function sair(){
@@ -31,7 +31,7 @@
                 return redirect()->to("admin/produto");
             } catch (Exception $erro) {
                 session()->setFlashdata("aviso-login", $erro->getMessage());
-                return redirect()->to("/admin");
+                return redirect()->to(base_url("/admin"));
             }
         }
         
@@ -47,7 +47,7 @@
                 session()->setFlashdata("aviso","Erro ao cadastar");
             }
             
-            return redirect()->to('admin');
+            return redirect()->to('/admin');
         } 
 }
 ?>
