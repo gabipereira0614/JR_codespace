@@ -2,9 +2,9 @@
 $id_produto = '';
 $nome_produto = '';
 $preco = '';
-$imagem ='';
+$imagem = '';
 
-if(isset($produto)){
+if (isset($produto)) {
     $id_produto =  $produto["id_produto"];
     $nome_produto = $produto["nome_produto"];
     $preco = $produto["preco"];
@@ -26,12 +26,15 @@ if(isset($produto)){
 
 <body>
     <main class="container">
-    <?php if (session()->has("tipo")) : ?>
-    <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
-        <?= session("mensagem") ?>
-    </div>
-<?php endif; ?>
-        <?= form_open_multipart(base_url("admin/produto/salvar"))?>
+        <a class="btn btn-danger" href="<?= base_url("admin/sair") ?>">
+            Sair
+        </a>
+        <?php if (session()->has("tipo")) : ?>
+            <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
+                <?= session("mensagem") ?>
+            </div>
+        <?php endif; ?>
+        <?= form_open_multipart(base_url("admin/produto/salvar")) ?>
         <div class="mb-3">
             <label for="idproduto" class="form-label">Código Poduto</label>
             <input type="text" class="form-control" id="id_produto" name="id_produto" value="<?= $id_produto ?>" readonly>
@@ -39,13 +42,14 @@ if(isset($produto)){
         <div class="mb-3">
             <label for="nome" class="form-label">Nome produto:</label>
             <input type="text" class="form-control" id="nome_produto" name="nome_produto" value="<?= $nome_produto ?>">
-        </div>  
+        </div>
         <div class="mb-3">
             <label for="preco" class="form-label">Preco produto</label>
             <input type="text" class="form-control" id="preco" name="preco" value="<?= $preco ?>">
-        </div> 
+        </div>
         <div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
+            <button class="btn btn-primary" type="submit">Salvar</button>
+            <button type="reset" class="btn btn-warning">Limpar</button>
         </div>
 
         <?= form_close() ?>
@@ -65,8 +69,10 @@ if(isset($produto)){
                         <th scope="row"><?= $produto["id_produto"] ?></th>
                         <td><?= $produto["nome_produto"] ?></td>
                         <td><?= $produto["preco"] ?></td>
-                        <td><a href="/admin/produto/deletar/<?=$produto["id_produto"]?>">Excluir</a>
-                    <?=anchor(base_url("/admin/produto/".$produto['id_produto']),"Alterar")?></td>
+                        <td>
+                            <a class="btn btn-danger" href="/admin/produto/deletar/<?= $produto["id_produto"] ?>)">Excluir</a>
+                            <?= anchor(base_url("/admin/produto/" . $produto['id_produto']), "Alterar", array('class' => 'btn btn-warning')) ?>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -74,6 +80,18 @@ if(isset($produto)){
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
+<script>
+    function remover(id) {
+        const link = document.getElementById("link-exclusao");
+        const modalExclusao =
+            new bootstrap.Modal(document.getElementById("confirmacao"), {});
+
+        link.setAttribute("href", `/admin/produto/deletar/${id_produto}`);
+
+        modalExclusao.show();
+    }
+</script>
+
 </body>
 
 </html>
