@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="imagem/png" href="../img/logo.jpeg">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./js/navbar.js" defer></script>
     <?= $this->renderSection('css') ?>
     <title>Jr Construções</title>
 </head>
@@ -35,7 +36,7 @@
 <main>
     <?= $this->renderSection('conteudo') ?>
 </main>
-<script src="./js/navbar.js" defer></script>
+
 <footer>
     <p class="footer-text">
         2023 Jr Construções / Todos os direitos reservados &copy;

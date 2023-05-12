@@ -1,11 +1,21 @@
+const botao = document.querySelector(".mobile-menu");
+const menu = document.querySelector(".nav-list");
+
+botao.addEventListener("click", function(){
+    menu.classList.toggle("active");
+});
+
+/*
 class MobileNavbar{
     constructor(mobileMenu, navList, navLinks){
-        this.mobileMenu = document.querySelector(this.mobileMenu);
-        this.navList = document.querySelector(this.navList);
-        this.navLinks = document.querySelectorAll(this.navLinks);
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelectorAll(navLinks);
         this.activeClass = "active";
 
         this.handleClick = this.handleClick.bind(this);
+        console.log("Teste");
+        this.init();
     }
 
     animateLinks(){
@@ -37,4 +47,4 @@ const mobileNavbar = new MobileNavbar(
     ".mobile-menu",
     ".nav-list",
     ".nav-list li",
-);
+);*/

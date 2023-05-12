@@ -39,6 +39,9 @@ $routes->get('/empresa', 'Home::empresa');
 $routes->get('/contato', 'Home::contato');
 $routes->get('/login', 'Home::login');
 
+$routes->get('/contato', 'Contact::Home', ['as' => 'contato']);
+$routes->post('/contato', 'Contact::store', ['as' => 'contato.store']);
+
 
 // login
 $routes->group("admin", function($routes){
