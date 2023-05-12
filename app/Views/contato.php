@@ -18,15 +18,15 @@
                 <p>assumenda adipisci. Adipisci natus consequuntur harum voluptates
                 <p>asperiores voluptas quo ea minus iusto. Distinctio!</p>
             </div>
-            <form action="">
+            <form action="<?php echo url_to('contato.store')?>" method="post">
                 <div class="informacoes-contato">
                     <label for="nome">Nome:</label><br>
-                    <input type="text"><br>
+                    <input type="text" name="name" id="name" class="name" placeholder="Seu Nome"><br>
                     <label for="email">Email:</label><br>
-                    <input type="email"><br>
+                    <input type="email" name="email" id="email" class="email" placeholder="Seu E-mail"><br>
                     <label for="mensagem">Mensagem</label><br>
-                    <textarea name="mensagem" id="txtArea" cols="30" rows="10"></textarea><br>
-                    <button type="submit">Enviar</button>
+                    <textarea name="message" class="message" placeholder="Sua mensagem..." id="txtArea" cols="30" rows="10"></textarea><br>
+                    <button type="submit" name="send" value="Enviar Mensagem" id="submit">Enviar</button>
                 </div>
             </form>
 
