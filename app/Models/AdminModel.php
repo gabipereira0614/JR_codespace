@@ -10,7 +10,7 @@ class AdminModel extends Model
     protected $table            = 'adm';
     protected $primaryKey       = 'id_adm';
     protected $useAutoIncrement = true;
-    protected $allowedFields = ["nome", "email", "senha"];
+    protected $allowedFields    = ["nome", "email", "senha"];
 
     public function cadastrar($nome,$email,$senha){
         // checar se ja existe usuario cadastrado
