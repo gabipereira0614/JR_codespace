@@ -13,15 +13,15 @@ class ProdutoModel extends Model
     protected $allowedFields = ["nome_produto","preco"];
 
 
-    public function getProdutos(){
+    // public function getProdutos(){
 
-        $builder = $this->db->table("produto p");
-        $builder->select("p.*, ip.imagem");
-        $builder->join("imagem_produto ip", "ip.fkproduto=p.id_produto");
-        $builder->orderBy("p.id_produto");
-        $query = $builder->get();
-        return $query->getResult();
-    }
+    //     $builder = $this->db->table("produto p");
+    //     $builder->select("p.*, ip.imagem");
+    //     $builder->join("imagem_produto ip", "ip.fkproduto=p.id_produto");
+    //     $builder->orderBy("p.id_produto");
+    //     $query = $builder->get();
+    //     return $query->getResult();
+    // }
 
     public function saveAs($arr) {
         $builder = $this->db->table("produto");
