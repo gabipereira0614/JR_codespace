@@ -47,7 +47,7 @@
                 session()->setFlashdata("aviso","Erro ao cadastar");
             }
             
-            return redirect()->to('/admin');
+            return redirect()->to(base_url('/admin'));
         } 
 }
 ?>
