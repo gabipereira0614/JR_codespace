@@ -3,13 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* body{
-    background-image: url(../img/fundo-jr-2.png);
-    background-repeat: repeat;
-    background-size: 133px;
-} */
-
 .conteudo-login {
     display: flex;
     flex-wrap: wrap;
@@ -21,16 +14,7 @@
     
 }
 
-/* .principal-login {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    height: 400px;
-    width: 400px;
-    border-radius: 20px;
-} */
+
 fieldset{
     height: 400px;
     width: 400px;
