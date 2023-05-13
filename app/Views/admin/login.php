@@ -2,15 +2,37 @@
 <?= $this->section('css') ?>
 <link rel="stylesheet" href="./styles/login.css">
 <?= $this->endSection() ?>
-<?= $this->section('conteudo') ?> 
+<?= $this->section('conteudo') ?>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alert-success {
+            background-color: green;
+        }
+
+        .alert-danger {
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main class="container">
 
 
-    <?php if (session()->has("aviso-login")) : ?>
-        <h2><?= session("aviso-login") ?></h2>
-    <?php endif; ?>
+        <?= form_open(base_url("admin/logar")) ?>
 
-    <?= form_open(base_url("admin/logar")) ?>
-    
         <div class="centralizar-login">
             <fieldset>
                 <legend>
@@ -18,6 +40,11 @@
                 </legend>
 
                 <div class="formulario-login">
+                    <?php if (session()->has("tipo")) : ?>
+                        <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
+                            <?= session("aviso") ?>
+                        </div>
+                    <?php endif; ?>
                     <label for="email"></label>
                     <input type="email" class="inputs" placeholder="Email" name="email">
                     <label for="senha"></label>
@@ -26,33 +53,31 @@
                 </div>
             </fieldset>
         </div>
-    <?php if (session()->has("aviso")) : ?>
-        <h2><?= session("aviso") ?></h2>
-    <?php endif; ?>
-    <?= form_close() ?>
+
+        <?= form_close() ?>
 
 
-    <?= form_open("admin/novo") ?>
-    <div>
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome">
-    </div>
+        <?= form_open("admin/novo") ?>
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+        </div>
 
-    <div>
-        <label for="email">E-mail</label>
-        <input type="text" name="email" id="email">
-    </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email">
+        </div>
 
-    <div>
-        <label for="senha">Senha</label>
-        <input type="password" name="senha" id="senha">
-    </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+        </div>
 
-    <div>
-        <button type="submit">OK</button>
-    </div>
-    <?= form_close() ?>
-<!-- </body>
+        <div>
+            <button type="submit">OK</button>
+        </div>
+        <?= form_close() ?>
+</body>
 
-</html> -->
+</html>
 <?= $this->endSection() ?>
