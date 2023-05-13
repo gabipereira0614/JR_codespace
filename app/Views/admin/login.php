@@ -14,15 +14,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .alert-success {
-            background-color: green;
-        }
-
-        .alert-danger {
-            background-color: red;
-        }
-    </style>
 
 </head>
 
@@ -52,30 +43,34 @@
                     <button type="submit" class="botao-contato">ENTRAR</button>
                 </div>
             </fieldset>
-        </div>
+       
 
         <?= form_close() ?>
 
 
         <?= form_open("admin/novo") ?>
-        <div>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome">
-        </div>
+            <fieldset>
+                <legend>
+                    <img class="imagem-logo" src="./img/perfil-de-usuario.png" alt="">
+                </legend>
 
-        <div>
-            <label for="email">E-mail</label>
-            <input type="text" name="email" id="email">
-        </div>
-
-        <div>
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha">
-        </div>
-
-        <div>
-            <button type="submit">OK</button>
-        </div>
+                <div class="formulario-login">
+                    <?php if (session()->has("tipo")) : ?>
+                        <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
+                            <?= session("aviso") ?>
+                        </div>
+                    <?php endif; ?>
+                    <p>Cadastrar</p>
+                    <label for="nome"></label>
+                    <input type="text" name="nome" placeholder="Nome" id="nome">
+                    <label for="email"></label>
+                    <input type="email" class="inputs" placeholder="Email" name="email">
+                    <label for="senha"></label>
+                    <input type="password" class="inputs" placeholder="Senha" name="senha">
+                    <button type="submit" class="botao-contato">ENTRAR</button>
+                </div>
+            </fieldset>
+            </div>
         <?= form_close() ?>
 </body>
 
