@@ -41,10 +41,20 @@
             $senha = $this->request->getPost("senha");
             
             $adminModel = new AdminModel();
-            if($adminModel->cadastrar($nome,$email,$senha)){
-                session()->setFlashdata("aviso","Sucesso ao cadastar");
-            } else {
-                session()->setFlashdata("aviso","Erro ao cadastar");
+
+            $buscaEmail = $adminModel->where("email", $email)->first();
+
+            if(!$buscaEmail){
+                if($adminModel->cadastrar($nome,$email,$senha)){
+                    session()->setFlashdata("tipo","success");
+                    session()->setFlashdata("aviso","Sucesso ao cadastar");
+                } else {
+                    session()->setFlashdata("tipo","danger");
+                    session()->setFlashdata("aviso","Erro ao cadastar");
+                }
+            }else{
+                session()->setFlashdata("tipo","danger");
+                session()->setFlashdata("aviso","Já existe");
             }
             
             return redirect()->to(base_url('/admin'));

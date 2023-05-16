@@ -48,6 +48,7 @@ $routes->group("admin", function($routes){
     $routes->get('','Admin\Home::index');
     $routes->post('novo','Admin\Autenticacao::salvar');
     $routes->post('logar', 'Admin\Autenticacao::logar');
+    $routes->get('sair', "Admin\Autenticacao::sair");
 });
 // admin->produto
 
