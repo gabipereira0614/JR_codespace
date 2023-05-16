@@ -8,6 +8,16 @@
         <title>Jr Construções</title>
     </head>
     <body>
+        <header>
+            <nav id="nav">
+                <a href="/" class="logo-area">
+                    <img src="../img/logo-sem-fundo.png" class="logo">
+                </a>
+                <a href="./novidades">Novidades</a>
+                <a href="./produto">Produtos</a>
+                <a href="./portifolio">Portifolio</a>
+            </nav>
+        </header>
         <div class="mb-3">
             <label for="nome" class="form-label" row="30" column="30">Imagem Portifolio:</label>
             <input type="text" class="form-control" id="imagem_portifolio" name="imagem_portifolio" value="">
