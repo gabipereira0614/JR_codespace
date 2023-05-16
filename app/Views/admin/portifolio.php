@@ -9,12 +9,8 @@
     </head>
     <body>
         <div class="mb-3">
-            <label for="nome" class="form-label">Campo de Texto da novidade:</label>
-            <textarea class="form-control" id="texto_novidades" rows="3"></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="nome" class="form-label" row="30" column="30">Imagem novidade:</label>
-            <input type="text" class="form-control" id="imagem_novidades" name="imagem_novidades" value="">
+            <label for="nome" class="form-label" row="30" column="30">Imagem Portifolio:</label>
+            <input type="text" class="form-control" id="imagem_portifolio" name="imagem_portifolio" value="">
         </div>
         <div>
             <button class="btn btn-primary" type="submit">Salvar</button>

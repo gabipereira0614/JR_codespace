@@ -65,6 +65,10 @@ $routes->get('produto/deletar/(:num)', "Admin\Produto::deletar/$1");
 
 // Novidades
 $routes->get('novidades', 'Admin\Novidades::index');
+
+// Portifolio
+$routes->get('portifolio', 'Admin\Portifolio::index');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
