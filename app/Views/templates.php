@@ -26,7 +26,7 @@
         <ul class="nav-list">
             <li><a href="./novidades">Novidades</a></li>
             <li><a href="./portifolio">Portifolio</a></li>
-            <li><a href="./produtos">Produtos</a></li>
+            <li><a href="./produto">Produtos</a></li>
             <li><a href="<?= base_url("admin/sair") ?>">Sair</a></li>
         </ul>
     </nav>
