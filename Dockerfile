@@ -19,6 +19,9 @@ RUN apt install -y default-mysql-server
 # Instalar e atualizar dependencias do composer
 RUN apt-get update && apt-get install -y libicu-dev && docker-php-ext-install intl
 
+RUN apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev
+RUN docker-php-ext-configure gd --with-jpeg=/usr/include/ --with-freetype=/usr/include/ \
+    && docker-php-ext-install -j$(nproc) gd
 # Ativar Apache mod_rewrite
 RUN a2enmod rewrite
 
