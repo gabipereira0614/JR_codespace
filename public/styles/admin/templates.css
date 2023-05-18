@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Nerko+One&family=Zen+Dots&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DDDDDD;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-image: linear-gradient(to bottom, #A6A6A6, #d6d6d685);
+}
+
+.logo{
+    overflow-x: visible;
+    width: 100px;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    position: relative;
+    transition: 0.1s;
+    font-family: 'Zen Dots', cursive;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    padding: .25rem .5rem;
+}
+
+a:hover{
+    transition: 0.1s;
+    color: white;
+}
+
+.sair{
+    color: rgb(177, 0, 0);
+}
+
+.btn-mobile{
+    display: none;
+}
+
+#pag-atual{
+    color: #F25D07;
+}
+
+#pag-atual:hover{
+    color: white;
+}
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.label-titulo{
+    font-family: 'Zen Dots', 'Arial';
+}
+
+footer{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    background-color: #B6B6B6;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+}
+
+.footer-text{
+    margin: 0 150px;
+    font-family:'Arial' cursive;
+    font-weight: 600;
+    font-size: larger;
+}
+

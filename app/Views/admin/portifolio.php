@@ -1,7 +1,7 @@
 <?= $this->extend('templates') ?>
 
 <?= $this->section('css') ?>
-<link rel="stylesheet" href="../styles/template.css">
+<link rel="stylesheet" href="../styles/admin/templates.css">
 <?= $this->endSection() ?>
 
 <?= $this->section('conteudo') ?>
@@ -15,7 +15,7 @@
 </style>
 <div class="container">
     <div class="mb-3">
-        <label for="nome" class="form-label" row="30" column="30">Imagem Portifolio:</label>
+        <label for="nome" class="form-label label-titulo" row="30" column="30">Imagem Portifolio:</label>
         <input type="text" class="form-control" id="imagem_portifolio" name="imagem_portifolio" value="">
     </div>
 

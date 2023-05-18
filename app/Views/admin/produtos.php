@@ -1,7 +1,7 @@
 <?= $this->extend('templates') ?>
 
 <?= $this->section('css') ?>
-<link rel="stylesheet" href="../styles/template.css">
+<link rel="stylesheet" href="../styles/admin/templates.css">
 <?= $this->endSection() ?>
 
 <?= $this->section('conteudo') ?>
@@ -37,26 +37,26 @@ if (isset($produto)) {
         <?php endif; ?>
         <?= form_open_multipart(base_url("admin/produto/salvar")) ?>
         <div class="mb-3">
-            <label for="idproduto" class="form-label">Código Poduto</label>
+            <label for="idproduto" class="form-label label-titulo">Código Poduto</label>
             <input type="text" class="form-control" id="id_produto" name="id_produto" value="<?= $id_produto ?>" readonly>
         </div>
         <div class="mb-3">
-            <label for="nome" class="form-label">Nome produto:</label>
+            <label for="nome" class="form-label label-titulo">Nome produto:</label>
             <input type="text" class="form-control" id="nome_produto" name="nome_produto" value="<?= $nome_produto ?>">
         </div>
         <div class="mb-3">
-            <label for="preco" class="form-label">Preco produto</label>
+            <label for="preco" class="form-label label-titulo">Preco produto</label>
             <input type="text" class="form-control" id="preco" name="preco" value="<?= $preco ?>">
         </div>
         <?php
             if ($imagem != ""):?>
             <div class="mb-3">
-            <label for="imagem" class="form-label">imagem atual </label><br/>
+            <label for="imagem" class="form-label label-titulo">imagem atual </label><br/>
             <img src="<?= base_url("uploads/produtos/$imagem")?>">
         </div>
         <?php endif;?>
         <div class="mb-3">
-            <label for="imagem" class="form-label">Url Imagem</label>
+            <label for="imagem" class="form-label label-titulo">Url Imagem</label>
             <input type="file" class="form-control" id="imagem" name="imagem" accept=".png, .jpg, .jpeg">
         </div>
 
