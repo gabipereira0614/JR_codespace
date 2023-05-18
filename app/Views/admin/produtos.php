@@ -56,6 +56,18 @@ if (isset($produto)) {
             <label for="preco" class="form-label">Preco produto</label>
             <input type="text" class="form-control" id="preco" name="preco" value="<?= $preco ?>">
         </div>
+        <?php
+            if ($imagem != ""):?>
+            <div class="mb-3">
+            <label for="imagem" class="form-label">imagem atual </label><br/>
+            <img src="<?= base_url("uploads/produtos/$imagem")?>">
+        </div>
+        <?php endif;?>
+        <div class="mb-3">
+            <label for="imagem" class="form-label">Url Imagem</label>
+            <input type="file" class="form-control" id="imagem" name="imagem" accept=".png, .jpg, .jpeg">
+        </div>
+
         <div>
             <button class="btn btn-primary" type="submit">Salvar</button>
             <button type="reset" class="btn btn-warning">Limpar</button>
