@@ -57,7 +57,7 @@ if (isset($produto)) {
             <input type="text" class="form-control" id="nome_produto" name="nome_produto" value="<?= $nome_produto ?>">
         </div>
     <div class="mb-3">
-        <label for="preco" class="form-label">Preco produto</label>
+        <label for="preco" class="form-label label-titulo">Preco produto</label>
         <input type="text" class="form-control" id="preco" name="preco" value="<?= $preco ?>">
     </div>
     <?php
@@ -68,7 +68,7 @@ if (isset($produto)) {
         </div>
     <?php endif; ?>
     <div class="mb-3">
-        <label for="imagem" class="form-label">Url Imagem</label>
+        <label for="imagem" class="form-label label-titulo">Selecione a Imagem</label>
         <input type="file" class="form-control" id="imagem" name="imagem" accept=".png, .jpg, .jpeg">
     </div>
 
