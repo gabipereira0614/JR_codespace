@@ -76,9 +76,16 @@ class Produto extends BaseController
 
             $imagemRedimensionada->resize(150, 150, true);
 
-            $imagemRedimensionada->save(ROOTPATH . "public\\uploads\\produtos\\$nomeAleatorio.jpeg");
+            $imagemRedimensionada->save("./uploads/produtos/$nomeAleatorio.jpeg");
 
             $dadosEnviados["imagem"] = "$nomeAleatorio.jpeg";
+        }
+        if($modelProduto->save($dadosEnviados)){
+            session()->setFlashdata("tipo", "success");
+            session()->setFlashdata("mensagem","Salvo com sucesso");
+        }else{
+            session()->setFlashdata("tipo","danger");
+            session()->setFlashdata("mensagem","Erro ao Salvar");
         }
         return redirect()->to("/admin/produto");
     }

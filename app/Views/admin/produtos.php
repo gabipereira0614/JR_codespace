@@ -1,8 +1,5 @@
 <?= $this->extend('templates') ?>
 
-<?= $this->section('css') ?>
-<link rel="stylesheet" href="../styles/template.css">
-<?= $this->endSection() ?>
 
 <?= $this->section('conteudo') ?>
 
@@ -20,76 +17,96 @@ if (isset($produto)) {
 }
 
 ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    lin
+    <title>Document</title>
+
+</head>
+
+<body>
 
 <style>
-    .btn-warning{
+    .btn-warning {
         --bs-btn-bg: #F25D07 !important;
-        --bs-btn-hover-bg:#F25D07 !important;
-        --bs-btn-border-color:#F25D07 !important;
-        --bs-btn-hover-border-color:#F25D07
-}
+        --bs-btn-hover-bg: #F25D07 !important;
+        --bs-btn-border-color: #F25D07 !important;
+        --bs-btn-hover-border-color: #F25D07
+    }
 </style>
-    <main class="container">
-        <?php if (session()->has("tipo")) : ?>
-            <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
-                <?= session("mensagem") ?>
-            </div>
-        <?php endif; ?>
-        <?= form_open_multipart(base_url("admin/produto/salvar")) ?>
-        <div class="mb-3">
-            <label for="idproduto" class="form-label">Código Poduto</label>
-            <input type="text" class="form-control" id="id_produto" name="id_produto" value="<?= $id_produto ?>" readonly>
+<main class="container">
+    <?php if (session()->has("tipo")) : ?>
+        <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
+            <?= session("mensagem") ?>
         </div>
-        <div class="mb-3">
-            <label for="nome" class="form-label">Nome produto:</label>
-            <input type="text" class="form-control" id="nome_produto" name="nome_produto" value="<?= $nome_produto ?>">
-        </div>
-        <div class="mb-3">
-            <label for="preco" class="form-label">Preco produto</label>
-            <input type="text" class="form-control" id="preco" name="preco" value="<?= $preco ?>">
-        </div>
-        <?php
-            if ($imagem != ""):?>
-            <div class="mb-3">
-            <label for="imagem" class="form-label">imagem atual </label><br/>
-            <img src="<?= base_url("uploads/produtos/$imagem")?>">
-        </div>
-        <?php endif;?>
-        <div class="mb-3">
-            <label for="imagem" class="form-label">Url Imagem</label>
-            <input type="file" class="form-control" id="imagem" name="imagem" accept=".png, .jpg, .jpeg">
-        </div>
+    <?php endif; ?>
 
-        <div>
-            <button class="btn btn-primary" type="submit">Salvar</button>
-            <button type="reset" class="btn btn-warning">Limpar</button>
+    <?= form_open_multipart(base_url("admin/produto/salvar")) ?>
+    <div class="mb-3">
+        <label for="idproduto" class="form-label">Código Poduto</label>
+        <input type="text" class="form-control" id="id_produto" name="id_produto" value="<?= $id_produto ?>" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome produto:</label>
+        <input type="text" class="form-control" id="nome_produto" name="nome_produto" value="<?= $nome_produto ?>">
+    </div>
+    <div class="mb-3">
+        <label for="preco" class="form-label">Preco produto</label>
+        <input type="text" class="form-control" id="preco" name="preco" value="<?= $preco ?>">
+    </div>
+    <?php
+    if ($imagem != "") : ?>
+        <div class="mb-3">
+            <label for="imagem" class="form-label">imagem atual </label><br />
+            <img src="<?= base_url("uploads/produtos/$imagem") ?>">
         </div>
+    <?php endif; ?>
+    <div class="mb-3">
+        <label for="imagem" class="form-label">Url Imagem</label>
+        <input type="file" class="form-control" id="imagem" name="imagem" accept=".png, .jpg, .jpeg">
+    </div>
 
-        <?= form_close() ?>
+    <div>
+        <button class="btn btn-primary" type="submit">Salvar</button>
+        <button type="reset" class="btn btn-warning">Limpar</button>
+    </div>
 
-        <table class="table">
-            <thead>
+    <?= form_close() ?>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Preco</th>
+                <th scope="col">imagem</th>
+                <th scope="col">Botoes</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($produtos as $produto) : ?>
                 <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Preco</th>
-                    <th scope="col">imagem</th>
+                    <th scope="row"><?= $produto["id_produto"] ?></th>
+                    <td><?= $produto["nome_produto"] ?></td>
+                    <td><?= $produto["preco"] ?></td>
+                    <td><img src="/uploads/produtos/<?= $produto["imagem"] ?>" width="100px"><?= esc($produto["imagem"]) ?>
+                    </td>
+                    <td>
+                    <a class="btn btn-danger" href="/admin/produto/deletar/<?= $produto["id_produto"] ?>)">Excluir</a>
+                    <?= anchor(base_url("/admin/produto/" . $produto['id_produto']), "Alterar", array('class' => 'btn btn-warning')) ?>
+                    </td>
                 </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($produtos as $produto) : ?>
-                    <tr>
-                        <th scope="row"><?= $produto["id_produto"] ?></th>
-                        <td><?= $produto["nome_produto"] ?></td>
-                        <td><?= $produto["preco"] ?></td>
-                        <td>
-                            <a class="btn btn-danger" href="/admin/produto/deletar/<?= $produto["id_produto"] ?>)">Excluir</a>
-                            <?= anchor(base_url("/admin/produto/" . $produto['id_produto']), "Alterar", array('class' => 'btn btn-warning')) ?>
-                        </td>
-                    </tr>
-                <?php endforeach; ?>
-            </tbody>
-            </div>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <img src="/uploads/produtos/test.png" width="100px"><?= esc($produto["imagem"]) ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+</main>
+</body>
 <?= $this->endSection() ?>

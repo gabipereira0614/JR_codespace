@@ -16,7 +16,7 @@
 <header>
     <nav id="nav">
         <figure class="logo-area">
-            <img src="../img/logo-sem-fundo.png" class="logo">
+            <img src="/img/logo-sem-fundo.png" class="logo">
         </figure>
         <div class="mobile-menu">
             <div class="linha1"></div>

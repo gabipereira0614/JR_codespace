@@ -27,7 +27,7 @@
         <div class="centralizar-login">
             <fieldset>
                 <legend>
-                    <img class="imagem-logo" src="./img/perfil-de-usuario.png" alt="">
+                <img class="imagem-logo" src="../uploads/produtos/test.png" alt="">
                 </legend>
 
                 <div class="formulario-login">
