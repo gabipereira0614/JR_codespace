@@ -80,7 +80,7 @@ class Produto extends BaseController
 
             $dadosEnviados["imagem"] = "$nomeAleatorio.jpeg";
         }
-        return redirect()->to("/admin/produto");
+        return redirect()->to(base_url("/admin/produto"));
     }
 
 

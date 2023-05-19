@@ -53,23 +53,6 @@ CREATE TABLE  adm (
 
 
 
--- CREATE TABLE  orcamento (
---   id_orcamento int(11) NOT NULL AUTO_INCREMENT,
---   preco_orcamento decimal(10,2) DEFAULT NULL,
---   data_entrega date NOT NULL,
---   PRIMARY KEY (id_orcamento)
--- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
---
--- Estrutura da tabela funcionario_orcamento
---
-
--- CREATE TABLE  funcionario_orcamento (
---   fk_funcionario int(11) NOT NULL,
---   fk_orcamento int(11) NOT NULL,
---   PRIMARY KEY (fk_funcionario,fk_orcamento),
---   KEY orcamento (fk_orcamento)
--- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
 -- --------------------------------------------------------
 
 --
@@ -103,6 +86,19 @@ CREATE TABLE  pedido_produto (
   KEY produto (fk_produto)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+CREATE TABLE novidades(
+  idnovidade INT NOT NULL AUTO_INCREMENT,
+  texto VARCHAR(500) NOT NULL,
+  imagem VARCHAR(200) NOT NULL,
+  PRIMARY KEY (idnovidade)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE portifolio(
+  idportifolio INT NOT NULL AUTO_INCREMENT,
+  imagem VARCHAR(200) NOT NULL,
+  PRIMARY KEY (idportifolio)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 -- --------------------------------------------------------
 
 --
@@ -117,12 +113,7 @@ CREATE TABLE  produto (
   imagem varchar (200) NOT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- CREATE TABLE  imagem_produto (
---     idimagem_produto INT PRIMARY KEY AUTO_INCREMENT,
---     imagem VARCHAR(200) NOT NULL,
---     fkproduto INT NOT NULL,
---     FOREIGN KEY (fkproduto) REFERENCES produto(id_produto)
--- ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 
 
