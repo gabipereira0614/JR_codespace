@@ -6,9 +6,9 @@ use CodeIgniter\Model;
 
 class NovidadeModel extends Model
 {
-    protected $table            = 'novidade';
-    protected $primaryKey       = 'id_novidade';
+    protected $table            = 'novidades';
+    protected $primaryKey       = 'idnovidade';
     protected $useAutoIncrement = true;
 
-    protected $allowedFields = ["texto","imagem"];
+    protected $allowedFields = ["texto"];
 }
