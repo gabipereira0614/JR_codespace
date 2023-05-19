@@ -1,5 +1,11 @@
 <?= $this->extend('templates') ?>
 
+<<<<<<< HEAD
+=======
+<?= $this->section('css') ?>
+<link rel="stylesheet" href="../styles/admin/templates.css">
+<?= $this->endSection() ?>
+>>>>>>> c574dcf43c84777fbcecf239cac369883a8a0553
 
 <?= $this->section('conteudo') ?>
 
@@ -39,10 +45,27 @@ if (isset($produto)) {
         --bs-btn-hover-border-color: #F25D07
     }
 </style>
+<<<<<<< HEAD
 <main class="container">
     <?php if (session()->has("tipo")) : ?>
         <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
             <?= session("mensagem") ?>
+=======
+    <main class="container">
+        <?php if (session()->has("tipo")) : ?>
+            <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
+                <?= session("mensagem") ?>
+            </div>
+        <?php endif; ?>
+        <?= form_open_multipart(base_url("admin/produto/salvar")) ?>
+        <div class="mb-3">
+            <label for="idproduto" class="form-label label-titulo">Código Poduto</label>
+            <input type="text" class="form-control" id="id_produto" name="id_produto" value="<?= $id_produto ?>" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="nome" class="form-label label-titulo">Nome produto:</label>
+            <input type="text" class="form-control" id="nome_produto" name="nome_produto" value="<?= $nome_produto ?>">
+>>>>>>> c574dcf43c84777fbcecf239cac369883a8a0553
         </div>
     <?php endif; ?>
 

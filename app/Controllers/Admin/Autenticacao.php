@@ -28,7 +28,7 @@
                 $adminModel = new AdminModel();
                 $id_adm = $adminModel->logar($email, $senha);
                 session()->set("id_adm", $id_adm);
-                return redirect()->to("admin/produto");
+                return redirect()->to(base_url("admin/produto"));
             } catch (Exception $erro) {
                 session()->setFlashdata("aviso-login", $erro->getMessage());
                 return redirect()->to(base_url("/admin"));
