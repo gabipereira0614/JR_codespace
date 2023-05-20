@@ -20,19 +20,6 @@ if (isset($produto)) {
 }
 
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-</head>
-
-<body>
-
 <style>
     .btn-warning {
         --bs-btn-bg: #F25D07 !important;
@@ -41,7 +28,6 @@ if (isset($produto)) {
         --bs-btn-hover-border-color: #F25D07
     }
 </style>
-    <main class="container">
         <?php if (session()->has("tipo")) : ?>
             <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
                 <?= session("mensagem") ?>
@@ -108,6 +94,4 @@ if (isset($produto)) {
     </table>
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</main>
-</body>
 <?= $this->endSection() ?>

@@ -81,6 +81,17 @@
     margin-top: 10px;
 }
 
+.link-h3{
+    transition: 0.1s;
+    font-family: 'Nerko One','Arial';
+    font-size: xx-large;
+}
+
+.link-h3:hover{
+    transition: 0.1s;
+    color: var(--global-brand-secondary);
+}
+
 .texto-descricao{
     margin-top: 10px;
     font-family: 'Lora', 'Arial';
@@ -125,7 +136,7 @@ width: 19.9%;
     display: flex;
     justify-content: center;
     font-family: 'Zen Dots', cursive;
-    font-size: 70px;
+    font-size: 60px;
     color:var(--global-brand-secondary);
     margin: 35px 0 35px 0;
 }
