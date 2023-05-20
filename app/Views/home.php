@@ -7,6 +7,10 @@
 
 <?= $this->section('conteudo') ?>
 
+<?php 
+var_dump($novidade[0]["imagem"]);
+?>
+
 <div class="container">
     <div class="conteudo-superior">
         <div class="container-texto-superior">
@@ -71,11 +75,10 @@
     <div class="conteudo-inferior">
         <h2 class="titulo-inferior">Novidades</h2>
         <div class="conteudo-novidades">
-            <img src="../img/logo.jpeg" alt="logo" class="imagem-novidade">
+        <img src="/uploads/novidades/<?= $novidade[0]["imagem"] ?>" class="imagem-novidade">
+            <!-- <img src="../img/logo.jpeg" alt="logo" class="imagem-novidade"> -->
             <div class="container-texto-inferior">
-                <p> ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Culpa perspiciatis fuga possimus nulla est maiores consequatur ut. Aut, amet </p>
-                <p>, deserunt eveniet id iste rem, vel aspernatur neque consectetur ullam!</p>
+                <?= $novidade[0]["texto"]; ?>
             </div>
         </div>
     </div>

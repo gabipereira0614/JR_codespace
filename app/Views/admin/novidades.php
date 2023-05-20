@@ -5,6 +5,21 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('conteudo') ?>
+
+
+<?php
+$idnovidade = '';
+$texto = '';
+$imagem ='';
+
+if (isset($novidades)) {
+    $idnovidade =  $novidades["idnovidade"];
+    $texto = $novidades["texto"];
+    $imagem = $novidades["imagem"];
+
+}
+
+?>
 <style>
     .btn-warning {
         --bs-btn-bg: #F25D07 !important;
@@ -21,12 +36,12 @@
         </div>
     <div class="mb-3">
         <label for="nome" class="form-label label-titulo">Campo de Texto da novidade:</label>
-        <textarea class="form-control" id="texto_novidades" rows="3"></textarea>
+        <textarea class="form-control" id="texto" rows="3" name="texto"></textarea>
     </div>
-    <!-- <div class="mb-3">
-        <label for="nome" class="form-label  label-titulo" row="30" column="30">Imagem novidade:</label>
-        <input type="text" class="form-control" id="imagem_novidades" name="imagem_novidades" value="">
-    </div> -->
+    <div class="mb-3">
+        <label for="imagem" class="form-label label-titulo">Selecione a Imagem</label>
+        <input type="file" class="form-control" id="imagem" name="imagem" accept=".png, .jpg, .jpeg">
+    </div>
     <div>
         <button class="btn btn-primary" type="submit">Salvar</button>
         <button type="reset" class="btn btn-warning">Limpar</button>
