@@ -1,11 +1,14 @@
 <?php
 
 namespace App\Controllers\Admin;
+
 use App\Controllers\BaseController;
 use App\Models\PortifolioModel;
 
-class Portifolio extends BaseController{
-    public function index($id = 0){
+class Portifolio extends BaseController
+{
+    public function index($id = 0)
+    {
         $portifolioModel = new PortifolioModel();
         $data['portifolios'] = $portifolioModel->findall();
 
@@ -20,7 +23,8 @@ class Portifolio extends BaseController{
         }
         return view("/admin/portifolio", $data);
     }
-    public function salvar(){
+    public function salvar()
+    {
         $modelPortifolio = new PortifolioModel();
         $dadosEnviados = $this->request->getPost();
         $alterarImagem = true;
@@ -40,7 +44,7 @@ class Portifolio extends BaseController{
 
         if ($alterarImagem) {
             $imagem = $this->request->getFile('imagem');
-            
+
             $nomeAleatorio = uniqid();
 
             $imagemRedimensionada = \Config\Services::image();
@@ -54,11 +58,10 @@ class Portifolio extends BaseController{
             $dadosEnviados["imagem"] = "$nomeAleatorio.jpeg";
         }
 
-        if($modelPortifolio->save($dadosEnviados)){
+        if ($modelPortifolio->save($dadosEnviados)) {
             session()->setFlashdata("tipo", "success");
             session()->setFlashdata("mensagem", "Salvo com sucesso");
-
-        }else{
+        } else {
             session()->setFlashdata("tipo", "danger");
             session()->setFlashdata("mensagem", "Erro ao salvar");
         }
@@ -66,9 +69,14 @@ class Portifolio extends BaseController{
     }
     public function deletar($id)
     {
+
+
         $portifolioModel =  new PortifolioModel();
         $portifolio = $portifolioModel->find($id);
-
+        $deletarArquivo = ROOTPATH . "public\\uploads\\portifolio\\" . $portifolio["imagem"];
+        if (file_exists($deletarArquivo)) {
+            unlink($deletarArquivo);
+        }
         $produtoModel = new PortifolioModel();
         if ($portifolioModel->delete($id)) {
             session()->setFlashdata("tipo", "success");
@@ -80,5 +88,3 @@ class Portifolio extends BaseController{
         return redirect()->to(base_url("/admin/portifolio"));
     }
 }
-
-?>
