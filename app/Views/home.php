@@ -32,7 +32,7 @@ var_dump($novidade[0]["imagem"]);
             <div class="card-servico">
                 <img src="../img/construcao.jpeg" alt="" class="imagem-card">
                 <div class="conteudo">
-                    <h3>Construção Civil</h3>
+                    <h3><a href="./portifolio" class="link-h3">Construção Civil</a></h3>
                     <p class="texto-descricao">
                         Cumque recusandae, rem, debitis saepe maiores ipsa distinctio quos enim
                         itaque ullam corporis culpa. Rem iste natus sapiente asperiores consequuntur
@@ -43,7 +43,7 @@ var_dump($novidade[0]["imagem"]);
             <div class="card-servico">
                 <img src="../img/pergolado_reduzido.jpeg" alt="" class="imagem-card">
                 <div class="conteudo">
-                    <h3>Carpintaria</h3>
+                    <h3><a href="./produtos" class="link-h3">Carpintaria</a></h3>
                     <p class="texto-descricao">
                         Cumque recusandae, rem, debitis saepe maiores ipsa distinctio quos enim
                         itaque ullam corporis culpa. Rem iste natus sapiente asperiores consequuntur
@@ -54,7 +54,7 @@ var_dump($novidade[0]["imagem"]);
             <div class="card-servico">
                 <img src="../img/maridoAluguel.jpg" alt="" class="imagem-card">
                 <div class="conteudo">
-                    <h3>Marido de Aluguel</h3>
+                    <h3><a href="./contato" class="link-h3">Marido de Aluguel</a></h3>
                     <p class="texto-descricao">
                         Cumque recusandae, rem, debitis saepe maiores ipsa distinctio quos enim
                         itaque ullam corporis culpa. Rem iste natus sapiente asperiores consequuntur

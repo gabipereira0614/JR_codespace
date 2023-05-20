@@ -32,10 +32,10 @@
         </ul>
     </nav>
 </header>
-<main>
+<main class="container">
     <?= $this->renderSection('conteudo') ?>
 </main>
-<footer>
+<footer class="align-self-end">
     <p class="footer-text">
         2023 Jr Construções / Todos os direitos reservados &copy;
     </p>

@@ -75,7 +75,6 @@ a:hover{
 
 .container{
     margin-top: 50px;
-    margin-bottom: 30px;
 }
 
 .label-titulo{
@@ -83,12 +82,13 @@ a:hover{
 }
 
 footer{
-    position: relative;
+    /* position: absolute; */
     display: flex;
+    margin-top: 30px;
     width: 100vw;
     height: 60px;
     background-color: #B6B6B6;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     align-items: center;
 }

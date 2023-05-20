@@ -15,7 +15,7 @@
                     <p class="card-text"><strong>Preço:</strong> R$ <?= $produto["preco"] ?></p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <a type="button" class="btn btn-sm btn-outline-secondary">Fale Conosco</a>
+                            <a type="button" class="btn btn-sm btn-outline-secondary" href="./contato">Fale Conosco</a>
                         </div>
                     </div>
                 </div>
