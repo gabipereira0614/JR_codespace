@@ -53,7 +53,6 @@ class Produto extends BaseController
         $alterarImagem = true;
 
         if (is_numeric($dadosEnviados["id_produto"])) {
-            return "ok";
             $produtoAtual = $modelProduto->find($dadosEnviados["id_produto"]);
 
             if ($this->request->getFile('imagem')->getSize() == 0) {

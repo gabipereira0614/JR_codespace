@@ -150,9 +150,14 @@ width: 19.9%;
 
 .imagem-novidade{
     border-radius: 20px;
+    width: 400px;
+    height: 300px;
 }
 
 .container-texto-inferior{
+    text-indent: 30px;
+    width: 500px;
+    text-align: justify;
     font-family: 'Lora', 'Arial';
     font-size: large;
 }
