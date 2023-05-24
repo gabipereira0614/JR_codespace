@@ -43,7 +43,7 @@
 .texto-central{
     width: 400px;
     height: 240px;
-    
+
 }
 .titulo-contato{
     font-family: 'Nerko One', cursive;
@@ -123,6 +123,7 @@
         width: 100%;
         gap: 1rem;
         display: flex;
+        flex-wrap: nowrap;
     }
     .foot{
         height: 50px;

@@ -52,8 +52,9 @@ if (isset($portifolio)) {
                 <th scope="row"><?= $portifolio["idportifolio"] ?></th>
                 <td><img src="/uploads/portifolio/<?= $portifolio["imagem"] ?>" width="100px"><?= esc($portifolio["imagem"]) ?>
                 </td>
-                <a class="btn btn-danger" href="/admin/portifolio/deletar/<?= $portifolio["idportifolio"] ?>)">Excluir</a>
-                <?= anchor(base_url("/admin/portifolio/" . $portifolio['idportifolio']), "Alterar", array('class' => 'btn btn-warning')) ?>
+                <td>
+                    <a class="btn btn-danger" href="/admin/portifolio/deletar/<?= $portifolio["idportifolio"] ?>)">Excluir</a>
+                    <?= anchor(base_url("/admin/portifolio/" . $portifolio['idportifolio']), "Alterar", array('class' => 'btn btn-warning')) ?>
                 </td>
             </tr>
         <?php endforeach; ?>

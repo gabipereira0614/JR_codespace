@@ -10,11 +10,15 @@
     <div class="titulo-portifolio">
         <h2>Nossos Destaques</h2>
     </div>
-    <?php foreach ($portifolios as $portifolio) : ?>
-        <div id="imagens-portifolio">
-            <img src="/uploads/portifolio/<?= $portifolio["imagem"] ?>" alt="Imagem de Portifolio" class="imagem">
+    <div class="container text-center">
+        <div class="row">
+            <?php foreach ($portifolios as $portifolio) : ?>
+            <div id="imagens-portifolio" class="col">
+                <img src="/uploads/portifolio/<?= $portifolio["imagem"] ?>" alt="Imagem de Portifolio" class="imagem">
+            </div>
+            <?php endforeach; ?>
         </div>
-    <?php endforeach; ?>
+    </div>
 </div>
 
 <?= $this->endSection() ?>
