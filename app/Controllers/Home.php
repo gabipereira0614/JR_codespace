@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\NovidadeModel;
+use App\Models\PortifolioModel;
 
 class Home extends BaseController
 {
@@ -15,7 +16,10 @@ class Home extends BaseController
 
     public function portifolio()
     {
-        return view('portifolio');
+        $portifolioModel = new PortifolioModel();
+        $data['portifolios'] = $portifolioModel->findall();
+
+        return view("portifolio", $data);
     }
 
     public function produtos()
