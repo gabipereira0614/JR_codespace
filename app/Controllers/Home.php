@@ -41,4 +41,7 @@ class Home extends BaseController
     {
         return view('login');
     }
+    public function cadastro(){
+        return view ('cadastro');
+    }
 }

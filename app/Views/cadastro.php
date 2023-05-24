@@ -22,7 +22,7 @@
     <main class="container">
 
 
-        <?= form_open(base_url("admin/logar")) ?>
+        <?= form_open(base_url("admin/novo")) ?>
 
         <div class="centralizar-login">
             <fieldset>
@@ -36,20 +36,19 @@
                             <?= session("aviso") ?>
                         </div>
                     <?php endif; ?>
+                    <label for="nome"></label>
+                    <input type="text" name="nome" placeholder="Nome" id="nome">
                     <label for="email"></label>
                     <input type="email" class="inputs" placeholder="Email" name="email">
                     <label for="senha"></label>
                     <input type="password" class="inputs" placeholder="Senha" name="senha">
                     <button type="submit" class="botao-contato">ENTRAR</button>
-                    <a href="../cadastro">cadastro</a>
                 </div>
             </fieldset>
        
 
         <?= form_close() ?>
 
-
-        
 </body>
 
 </html>
