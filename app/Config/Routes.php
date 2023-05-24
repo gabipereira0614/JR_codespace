@@ -68,8 +68,10 @@ $routes->get('novidades', 'Admin\Novidades::index');
 $routes->get('novidades', 'Admin\Novidades::salvar');
 
 // Portifolio
-$routes->get('portifolio', 'Admin\Portifolio::index');
-$routes->get('portifolio', 'Admin\Portifolio::salvar');
+$routes->get('admin/portifolio', 'Admin\Portifolio::index');
+
+$routes->post('admin/portifolio', 'Admin\Portifolio::salvar');
+
 $routes->get('portifolio/deletar/(:num)', "Admin\Portifolio::deletar/$1");
 
 /*

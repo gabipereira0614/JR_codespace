@@ -7,22 +7,14 @@ use App\Models\PortifolioModel;
 
 class Portifolio extends BaseController
 {
-    public function index($id = 0)
+    public function index()
     {
         $portifolioModel = new PortifolioModel();
         $data['portifolios'] = $portifolioModel->findall();
 
-        if ($id != 0) {
-            $portifolios = $portifolioModel->find($id);
-            if (!$portifolios) {
-                session()->setFlashdata("tipo", "danger");
-                session()->setFlashdata("mensagem", "produto não encontrado!");
-                return redirect()->to(base_url("/admin/portifolio"));
-            }
-            $data["portifolio"] = $portifolios;
-        }
         return view("/admin/portifolio", $data);
     }
+    
     public function salvar()
     {
         $modelPortifolio = new PortifolioModel();
