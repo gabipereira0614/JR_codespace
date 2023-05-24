@@ -9,7 +9,7 @@
     <?php foreach ($produtos as $produto) : ?>
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="<?= $produto["imagem"] ?>" alt="Product Image">
+                <img class="card-img-top" src="/uploads/produtos/<?= $produto["imagem"] ?>" alt="Product Image">
                 <div class="card-body">
                     <h5 class="card-title"><?= $produto["nome_produto"] ?></h5>
                     <p class="card-text"><strong>Preço:</strong> R$ <?= $produto["preco"] ?></p>

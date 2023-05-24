@@ -7,9 +7,7 @@
 
 <?= $this->section('conteudo') ?>
 
-<?php 
-var_dump($novidade[0]["imagem"]);
-?>
+
 
 <div class="container">
     <div class="conteudo-superior">

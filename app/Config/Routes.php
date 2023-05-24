@@ -50,8 +50,11 @@ $routes->group("admin", function($routes){
     $routes->post('logar', 'Admin\Autenticacao::logar');
     $routes->get('sair', "Admin\Autenticacao::sair");
 });
-// admin->produto
+// cadastro
 
+$routes->get("cadastro",'Home::cadastro');
+// admin->produto
+$routes->group("admin",['filter' => 'admin'], function($routes){
 $routes->get('produtos','Admin\Produto::index');
 $routes->post('novo','Admin\Autenticacao::salvar');
 $routes->post('logar', 'Admin\Autenticacao::logar');
@@ -71,7 +74,7 @@ $routes->get('novidades', 'Admin\Novidades::salvar');
 $routes->get('portifolio', 'Admin\Portifolio::index');
 $routes->get('portifolio', 'Admin\Portifolio::salvar');
 $routes->get('portifolio/deletar/(:num)', "Admin\Portifolio::deletar/$1");
-
+});
 /*
  * --------------------------------------------------------------------
  * Additional Routing
