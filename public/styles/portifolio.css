@@ -16,9 +16,10 @@
     color:var(--global-brand-secondary);
 }
 
-#imagens-portifolio{
+.imagens-portifolio{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     margin-top: 50px;
     width: 100%;
     height: auto;
@@ -28,6 +29,7 @@
 }
 
 .imagem{
+    display: flex;
     height: 400px;
     width: 400px;
     border: solid black 1px;
