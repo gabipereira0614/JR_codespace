@@ -11,14 +11,15 @@
 .titulo-portifolio{
     width: 100%;
     text-align: center;
-    font-family: 'Nerko One', cursive;
+    font-family: 'Zen Dots', cursive;
     font-size: 2.5rem;
     color:var(--global-brand-secondary);
 }
 
-#imagens-portifolio{
+.container-portifolio{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     margin-top: 50px;
     width: 100%;
     height: auto;
@@ -28,6 +29,7 @@
 }
 
 .imagem{
+    display: flex;
     height: 400px;
     width: 400px;
     border: solid black 1px;
@@ -55,26 +57,76 @@
     }
 }
 
-/* Tela média */
-@media (max-width: 720px){
-    #conteudo-portifolio {
-        padding-top: 110px;
-        }
-    .footer{
-        height: 50px;
-    }
 
-    .footer-text{
-        margin: 0 15px;
-        font-size: large;
+@media screen and (min-width: 551px) and (max-width: 720px){
+    #conteudo-portifolio{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 150px;
+        width: 100%;
+        
+    }
+    
+    .titulo-portifolio{
+        width: 100%;
+        text-align: center;
+        font-family: 'Zen Dots', cursive;
+        font-size: 2.5rem;
+        color:var(--global-brand-secondary);
+    }
+    
+    .container-portifolio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 50px;
+    }
+    
+    .imagem{
+        display: flex;
+        height: 400px;
+        width: 400px;
+        border: solid black 1px;
     }
 }
-
-/* Tela grande */
-@media (max-width: 960px){
-
-}
-
-/* Tela grande+ */
-@media (max-width: 1140px){
+@media screen and (min-width: 721px) and (max-width: 960px){
+    #conteudo-portifolio{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 150px;
+        width: 100%;
+        
+    }
+    
+    .titulo-portifolio{
+        width: 100%;
+        text-align: center;
+        font-family: 'Zen Dots', cursive;
+        font-size: 2rem;
+        color:var(--global-brand-secondary);
+    }
+    
+    .container-portifolio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 50px;
+    }
+    
+    .imagem{
+        display: flex;
+        height: 400px;
+        width: 400px;
+        border: solid black 1px;
+    }
 }

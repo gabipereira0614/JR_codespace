@@ -28,6 +28,7 @@
             <li><a href="./novidades">Novidades</a></li>
             <li><a href="./portifolio">Portifolio</a></li>
             <li><a href="./produto">Produtos</a></li>
+            <li><a href="/cadastro">Cadastrar</a></li>
             <li><a href="<?= base_url("admin/sair") ?>" class="sair">Sair</a></li>
         </ul>
     </nav>

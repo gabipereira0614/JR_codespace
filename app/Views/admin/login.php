@@ -41,7 +41,6 @@
                     <label for="senha"></label>
                     <input type="password" class="inputs" placeholder="Senha" name="senha">
                     <button type="submit" class="botao-contato">ENTRAR</button>
-                    <a href="../cadastro">cadastro</a>
                 </div>
             </fieldset>
        

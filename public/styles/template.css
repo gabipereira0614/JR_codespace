@@ -146,7 +146,7 @@ footer{
 }
 
 /* Tela média */
-@media screen and (min-width: 551px) and (max-width: 720px){
+@media screen and (min-width: 551px) and (max-width: 800px){
     .foot{
         height: 50px;
     }
@@ -207,7 +207,7 @@ footer{
 }
 
 /* Tela grande */
-@media screen and (min-width: 721px) and (max-width: 960px){
+@media screen and (min-width: 801px) and (max-width: 960px){
 
 }
 

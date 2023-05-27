@@ -10,14 +10,10 @@
     <div class="titulo-portifolio">
         <h2>Nossos Destaques</h2>
     </div>
-    <div class="container text-center">
-        <div class="row">
+    <div class="container-portifolio">
             <?php foreach ($portifolios as $portifolio) : ?>
-            <div id="imagens-portifolio" class="col">
                 <img src="/uploads/portifolio/<?= $portifolio["imagem"] ?>" alt="Imagem de Portifolio" class="imagem">
-            </div>
             <?php endforeach; ?>
-        </div>
     </div>
 </div>
 

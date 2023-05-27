@@ -27,11 +27,9 @@
                 $senha = $this->request->getPost("senha");
                 $adminModel = new AdminModel();
                 $id_adm = $adminModel->logar($email, $senha);
-                if($email ==  "bibi@gmail.com" )
-                {
                     session()->set("id_adm", $id_adm);
                     return redirect()->to(base_url("admin/produto"));
-                }
+
                 return redirect()->to(base_url(""));
             } catch (Exception $erro) {
                 session()->setFlashdata("aviso-login", $erro->getMessage());
