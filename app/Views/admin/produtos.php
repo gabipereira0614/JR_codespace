@@ -2,6 +2,7 @@
 
 <?= $this->section('css') ?>
 <link rel="stylesheet" href="../styles/admin/templates.css">
+<link rel="stylesheet" href="../styles/admin/produtos.css">
 <?= $this->endSection() ?>
 
 <?= $this->section('conteudo') ?>
