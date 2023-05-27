@@ -13,19 +13,46 @@
         text-align: center;
 }
 
+.card-img-top{
+    width: 300px;
+    height: 300px;
+}
+.footer-text{
+    margin: 0 15px;
+    font-size: small;
+}
+
 /* Tela pequena */
 @media (max-width: 540px){
-    /* .card-body {
-        
-        text-align: center;
-        
-    } */
     footer{
-        height: 40px;
+        display: flex;
+        height: 60px;
+        background-color: #B6B6B6;
+        bottom: 0;
+        align-items: center;
+        position: static;
     }
     
-    .footer-text{
-        margin: 0 15px;
-        font-size: small;
+   
+}
+@media (max-width: 1140px){
+    footer{
+        display: flex;
+        height: 60px;
+        background-color: #B6B6B6;
+        bottom: 0;
+        align-items: center;
+        position: static;
+    }
+}
+
+@media (max-width: 960px){
+    footer{
+        display: flex;
+        height: 60px;
+        background-color: #B6B6B6;
+        bottom: 0;
+        align-items: center;
+        position: static;
     }
 }
