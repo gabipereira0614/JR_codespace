@@ -50,6 +50,10 @@ $routes->group("admin", function($routes){
     $routes->post('logar', 'Admin\Autenticacao::logar');
     $routes->get('sair', "Admin\Autenticacao::sair");
 });
+
+// contrato
+$routes->get("contrato",'Home::contrato');
+
 // cadastro
 
 $routes->get("cadastro",'Home::cadastro');

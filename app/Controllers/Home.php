@@ -44,4 +44,7 @@ class Home extends BaseController
     public function cadastro(){
         return view ('cadastro');
     }
+    public function contrato(){
+        return view('admin/contrato');
+    }
 }

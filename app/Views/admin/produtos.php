@@ -36,7 +36,7 @@ if (isset($produto)) {
         <?php endif; ?>
         <?= form_open_multipart(base_url("admin/produto/salvar")) ?>
         <div class="mb-3">
-            <label for="idproduto" class="form-label label-titulo">Código Poduto</label>
+            <label for="idproduto" class="form-label label-titulo" >Código Poduto</label>
             <input type="text" class="form-control" id="id_produto" name="id_produto" value="<?= $id_produto ?>" readonly>
         </div>
         <div class="mb-3">
