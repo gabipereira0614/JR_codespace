@@ -85,6 +85,21 @@ p{
     border-radius: 4px;
 }
 
+.separacao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.icones{
+    text-align: center;
+    font-family: 'Nerko One';
+    font-size: 22px;
+}
+
 @media screen and (max-width: 550px){
     
 }
