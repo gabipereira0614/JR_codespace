@@ -32,9 +32,8 @@
                 <div class="conteudo">
                     <h3><a href="./portifolio" class="link-h3">Construção Civil</a></h3>
                     <p class="texto-descricao">
-                        Cumque recusandae, rem, debitis saepe maiores ipsa distinctio quos enim
-                        itaque ullam corporis culpa. Rem iste natus sapiente asperiores consequuntur
-                        consequatur
+                        A nossa empresa de construção civil é especializada em projetar, construir e renovar estruturas físicas.
+                        Desde o planejamento inicial até a conclusão da obra, garantimos qualidade e segurança em todas as etapas do processo.
                     </p>
                 </div>
             </div>
@@ -43,9 +42,10 @@
                 <div class="conteudo">
                     <h3><a href="./produtos" class="link-h3">Carpintaria</a></h3>
                     <p class="texto-descricao">
-                        Cumque recusandae, rem, debitis saepe maiores ipsa distinctio quos enim
-                        itaque ullam corporis culpa. Rem iste natus sapiente asperiores consequuntur
-                        consequatur
+                        A nossa empresa é especializada em trabalhos em madeira,
+                        oferecendo serviços de alta qualidade para atender às necessidades dos clientes.
+                        Nós projetamos, fabricamos e instalamos uma variedade de produtos de madeira, como móveis, portas, janelas, armários, escadas
+                        e muito mais.
                     </p>
                 </div>
             </div>
@@ -54,26 +54,26 @@
                 <div class="conteudo">
                     <h3><a href="./contato" class="link-h3">Marido de Aluguel</a></h3>
                     <p class="texto-descricao">
-                        Cumque recusandae, rem, debitis saepe maiores ipsa distinctio quos enim
-                        itaque ullam corporis culpa. Rem iste natus sapiente asperiores consequuntur
-                        consequatur
+                        Nossa empresa oferece serviços versáteis e práticos para resolver problemas domésticos.
+                        Nossos profissionais especializados estão prontos para ajudar em uma variedade de tarefas,
+                        desde pequenos reparos até instalações e manutenção residencial.
                     </p>
                 </div>
             </div>
         </div>
         <section class="container-carrossel">
             <div class="imagem-carrossel">
-                <img src="../img/deck2.jpeg" alt="foto1" height="400" width="100%"> 
+                <img src="../img/deck2.jpeg" alt="foto1" height="400" width="100%">
                 <img src="../img/construcao.jpeg" alt="foto2" height="400" width="100%">
                 <img src="../img/carpintaria1.jpeg" alt="foto2" height="400" width="100%">
-                <img src="../img/pergolado.jpeg" alt="foto2" height="400" width="100%">
+                <img src="../img/carpintaria1.jpeg" alt="foto2" height="400" width="100%">
             </div>
         </section>
     </div>
     <div class="conteudo-inferior">
         <h2 class="titulo-inferior">Novidades</h2>
         <div class="conteudo-novidades">
-        <img src="/uploads/novidades/<?= $novidade[0]["imagem"] ?>" class="imagem-novidade">
+            <img src="/uploads/novidades/<?= $novidade[0]["imagem"] ?>" class="imagem-novidade">
             <div class="container-texto-inferior">
                 <?= $novidade[0]["texto"]; ?>
             </div>

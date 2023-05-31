@@ -102,8 +102,8 @@
 
 .container-carrossel{
     overflow-x: visible;
-    width: 80%;
-    height: 400px;
+    width: 78%;
+    height: 390px;
     overflow: hidden;
     float: left;
 }
@@ -114,7 +114,7 @@
     animation-iteration-count: infinite;
 }
 .container-carrossel .imagem-carrossel img{
-width: 19.9%;
+width: 19.94%;
 }
 .imagem-carrossel{
     width: 100%;
@@ -236,6 +236,7 @@ width: 19.9%;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        width: 100%;
     }
     
     .imagem-novidade{
@@ -247,6 +248,8 @@ width: 19.9%;
     .container-texto-inferior{
         font-family: 'Lora', 'Arial';
         font-size: large;
+        width: 100%;
+        display: flex;
     }
 }
 

@@ -10,6 +10,18 @@ hr{
     height: 3px;
     border:#ff823a solid;
 }
+h3{
+    font-family: 'Zen Dots', 'Arial';
+    font-size: large;
+}
+.divisoria{
+    display: flex;
+    width: 100%;
+    height: 5px;
+    border:#ff823a solid;
+    border-radius: 4px;
+    margin: 6px 0 6px 0;
+}
 
 /* Conteúdo Superior */
 .conteudo-superior{
@@ -50,6 +62,10 @@ hr{
     width: 50%;
 }
 
+.sub-titulo{
+    text-align: center;
+}
+
 p{
     font-family: 'Lora', 'Arial';
     font-size: medium;
@@ -65,7 +81,23 @@ p{
 .imagem-empresa{
     width: 100%;
     height: 300px;
-    border: solid #ff823a 3px;
+    border: solid #ff8e4d 3px;
+    border-radius: 4px;
+}
+
+.separacao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.icones{
+    text-align: center;
+    font-family: 'Nerko One';
+    font-size: 22px;
 }
 
 @media screen and (max-width: 550px){
