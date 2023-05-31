@@ -489,3 +489,16 @@ width: 19.94%;
         font-size: large;
     }
 }
+@media (max-width: 540px){
+    /* .imagem-carrossel{
+        width: 80%;
+        height: 200px;
+    } */
+    .container-carrossel .imagem-carrossel img{
+        width: 19.95%;
+        }
+    img{
+        height: 200px;
+    }
+   
+}
