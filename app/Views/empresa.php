@@ -65,9 +65,23 @@
             mesa. Ao promover um ambiente colaborativo, a JrConstruções busca aproveitar ao máximo o potencial de sua equipe e 
             alcançar resultados excepcionais.
         </p>
-        <li>Comunicação eficaz</li><img src="../img/icones/comunicacao.png">
-        <li>Abordagem consultiva</li><img src="../img/icones/consulta.png">
-        <li>Aprendizado contínuo</li><img src="../img/icones/aprendendo.png">
+        <div class="separacao">
+            <div class="icones">
+                <img src="../img/icones/comunicacao.png">
+                <br>
+                <b>Comunicação eficaz</b>
+            </div>
+            <div class="icones">
+                <img src="../img/icones/consulta.png">
+                <br>
+                <b>Abordagem consultiva</b>
+            </div>
+            <div class="icones">
+                <img src="../img/icones/aprendendo.png">
+                <br>
+                <b>Aprendizado contínuo</b>
+            </div>
+        </div>
     </div>   
 </div>
 <div class="conteudo-central">

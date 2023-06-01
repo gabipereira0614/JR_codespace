@@ -19,15 +19,15 @@
 
 <body>
 
-    <main class="container">
+    <main class="container-login">
 
+    <div class="conteudo-login">
 
         <?= form_open(base_url("admin/logar")) ?>
 
-        <div class="centralizar-login">
             <fieldset>
                 <legend>
-                <img class="imagem-logo" src="./img/perfil-de-usuario.png" alt="">
+                    <img class="imagem-logo" src="./img/perfil-de-usuario.png" alt="">
                 </legend>
 
                 <div class="formulario-login">
@@ -36,19 +36,21 @@
                             <?= session("aviso") ?>
                         </div>
                     <?php endif; ?>
-                    <label for="email"></label>
+                    
                     <input type="email" class="inputs" placeholder="Email" name="email">
-                    <label for="senha"></label>
+                    
                     <input type="password" class="inputs" placeholder="Senha" name="senha">
-                    <button type="submit" class="botao-contato">ENTRAR</button>
+                    <button type="submit" class="botao-entrar">ENTRAR</button>
                 </div>
             </fieldset>
-       
-
-        <?= form_close() ?>
 
 
-        
+            <?= form_close() ?>
+            </div>
+    </main>
+
+
+
 </body>
 
 </html>

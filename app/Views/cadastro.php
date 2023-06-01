@@ -19,35 +19,32 @@
 
 <body>
 
-    <main class="container">
+    <main class="container-cadastro">
 
+    <div class="conteudo-cadastro">
 
         <?= form_open(base_url("admin/novo")) ?>
-
-        <div class="centralizar-login">
-            <fieldset>
-                <legend>
+        <fieldset>
+            <legend>
                 <img class="imagem-logo" src="./img/perfil-de-usuario.png" alt="">
-                </legend>
+            </legend>
 
-                <div class="formulario-login">
-                    <?php if (session()->has("tipo")) : ?>
-                        <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
-                            <?= session("aviso") ?>
-                        </div>
-                    <?php endif; ?>
-                    <label for="nome"></label>
-                    <input type="text" name="nome" placeholder="Nome" id="nome">
-                    <label for="email"></label>
-                    <input type="email" class="inputs" placeholder="Email" name="email">
-                    <label for="senha"></label>
-                    <input type="password" class="inputs" placeholder="Senha" name="senha">
-                    <button type="submit" class="botao-contato">ENTRAR</button>
-                </div>
-            </fieldset>
-       
+            <div class="formulario-login">
+                <?php if (session()->has("tipo")) : ?>
+                    <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
+                        <?= session("aviso") ?>
+                    </div>
+                <?php endif; ?>
+                <input type="text" name="nome" placeholder="Nome" id="nome" class="inputs">
+                <input type="email" class="inputs" placeholder="Email" name="email">
+                <input type="password" class="inputs" placeholder="Senha" name="senha">
+                <button type="submit" class="botao-cadastrar">Cadastrar</button>
+            </div>
+        </fieldset>
+
 
         <?= form_close() ?>
+        </div>
 
 </body>
 
