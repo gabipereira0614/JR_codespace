@@ -63,10 +63,10 @@
         </div>
         <section class="container-carrossel">
             <div class="imagem-carrossel">
-                <img src="../img/deck2.jpeg" alt="foto1" height="400" width="100%">
-                <img src="../img/construcao.jpeg" alt="foto2" height="400" width="100%">
-                <img src="../img/carpintaria1.jpeg" alt="foto2" height="400" width="100%">
-                <img src="../img/carpintaria1.jpeg" alt="foto2" height="400" width="100%">
+                <img src="../img/deck2.jpeg" alt="foto1" height="100%" width="100%">
+                <img src="../img/construcao.jpeg" alt="foto2" height="100%" width="100%">
+                <img src="../img/carpintaria1.jpeg" alt="foto2" height="100%" width="100%">
+                <img src="../img/carpintaria1.jpeg" alt="foto2" height="100%" width="100%">
             </div>
         </section>
     </div>
