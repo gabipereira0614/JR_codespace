@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+main{
+    width: 100vw;
+}
+
 /* Campos independentes */
 hr{
     width: 100%;
@@ -21,6 +25,14 @@ h3{
     border:#ff823a solid;
     border-radius: 4px;
     margin: 6px 0 6px 0;
+}
+p{
+    font-family: 'Lora', 'Arial';
+    font-size: medium;
+    text-align: justify;
+    text-indent: 30px;
+    padding-bottom: 10px;
+    margin-top: 5px;
 }
 
 /* Conteúdo Superior */
@@ -66,14 +78,6 @@ h3{
     text-align: center;
 }
 
-p{
-    font-family: 'Lora', 'Arial';
-    font-size: medium;
-    text-align: justify;
-    text-indent: 30px;
-    padding-bottom: 10px;
-}
-
 .imagem-conteudo{
     width: 47%;
 }
@@ -100,18 +104,71 @@ p{
     font-size: 22px;
 }
 
+.conteudo-inferior{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 7vw 20px 7vw;
+    gap: 3%;
+}
+
 @media screen and (max-width: 550px){
-    
+    .titulo-superior{
+        font-size: 45px;
+    }
+
+    .conteudo-central{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .campo-texto{
+        width: 100%;
+    }
+
+    .imagem-conteudo{
+        width: 100%;
+    }
+
+    .imagem-empresa{
+        height: 220px;
+    }
 }
 
 /* Tela média */
 @media screen and (min-width: 551px) and (max-width: 720px){
-    
+    .conteudo-central{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .campo-texto{
+        width: 100%;
+    }
+
+    .imagem-conteudo{
+        width: 100%;
+    }
+
+    .imagem-empresa{
+        height: 325px;
+    }
 }
 
 /* Tela grande */
 @media screen and (min-width: 721px) and (max-width: 960px){
+    .conteudo-superior{
+        padding: 9rem 0 0 0;
+    }
 
+    .conteudo-central{
+        padding: 0;
+        margin: 40px 4vw 20px 4vw
+    }
+
+    .imagem-empresa{
+        height: 325px;
+    }
 }
 
 /* Tela grande+ */

@@ -30,7 +30,7 @@
             <div class="card-servico">
                 <img src="../img/construcao.jpeg" alt="" class="imagem-card">
                 <div class="conteudo">
-                    <h3><a href="./portifolio" class="link-h3">Construção Civil</a></h3>
+                    <h3>Construção Civil</h3>
                     <p class="texto-descricao">
                         A nossa empresa de construção civil é especializada em projetar, construir e renovar estruturas físicas.
                         Desde o planejamento inicial até a conclusão da obra, garantimos qualidade e segurança em todas as etapas do processo.
@@ -40,7 +40,7 @@
             <div class="card-servico">
                 <img src="../img/pergolado_reduzido.jpeg" alt="" class="imagem-card">
                 <div class="conteudo">
-                    <h3><a href="./produtos" class="link-h3">Carpintaria</a></h3>
+                    <h3>Carpintaria</h3>
                     <p class="texto-descricao">
                         A nossa empresa é especializada em trabalhos em madeira,
                         oferecendo serviços de alta qualidade para atender às necessidades dos clientes.
@@ -52,7 +52,7 @@
             <div class="card-servico">
                 <img src="../img/maridoAluguel.jpg" alt="" class="imagem-card">
                 <div class="conteudo">
-                    <h3><a href="./contato" class="link-h3">Marido de Aluguel</a></h3>
+                    <h3>Marido de Aluguel</h3>
                     <p class="texto-descricao">
                         Nossa empresa oferece serviços versáteis e práticos para resolver problemas domésticos.
                         Nossos profissionais especializados estão prontos para ajudar em uma variedade de tarefas,

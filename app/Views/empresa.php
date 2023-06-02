@@ -82,16 +82,69 @@
                 <b>Aprendizado contínuo</b>
             </div>
         </div>
-    </div>   
-</div>
-<div class="conteudo-central">
+    </div>
+    <br>
     <p>
         Em resumo, a JrConstruções de Cesário valoriza a colaboração como um pilar central de sua cultura empresarial. Através da 
         comunicação eficaz, trabalho em equipe, abordagem consultiva, sinergia entre departamentos e aprendizado contínuo, eles 
         constroem um ambiente propício para o sucesso de cada projeto e a satisfação dos clientes.
-    </p>
+    </p>   
 </div>
-
-<div class="conteudo-inferior"></div>
+<div class="conteudo-inferior">
+    <h3>A história por trás da Jr</h3>
+    <div class="divisoria"></div>
+    <p>
+        A história por trás da empresa JrConstruções é uma jornada marcada por desafios, persistência e uma paixão genuína pela 
+        construção. A empresa foi fundada em 1995 por João Rodrigues, um jovem engenheiro cheio de sonhos e determinação.
+        João começou sua carreira em empresas de construção, onde aprendeu muito sobre o setor. No entanto, ele sentiu que poderia fazer 
+        mais e decidiu arriscar e criar seu próprio negócio. Com poucos recursos financeiros, ele estabeleceu a JrConstruções em um 
+        modesto escritório alugado, com apenas um computador e uma mesa improvisada.
+    </p>
+    <div class="campo-texto">
+        <p>
+            Nos primeiros anos, a JrConstruções enfrentou diversos desafios. Trabalhando principalmente em projetos de pequeno porte, 
+            como reformas residenciais e pequenas construções comerciais, João e sua pequena equipe colocaram todo o seu empenho para 
+            entregar resultados de qualidade aos clientes.
+        </p>
+        <p>
+            Com o passar do tempo, a reputação da JrConstruções foi crescendo, graças ao profissionalismo e à dedicação de sua equipe. 
+            Isso permitiu que a empresa conquistasse projetos um pouco maiores e mais complexos. Mesmo com recursos limitados, eles se 
+            esforçaram para oferecer soluções criativas e eficientes aos seus clientes.
+        </p>
+        <p>
+            A JrConstruções valorizou cada oportunidade que teve para aprender e crescer. João entendeu a importância de investir em 
+            talentos e contratou profissionais dedicados, que compartilhavam da sua visão e paixão pela construção. A empresa também 
+            procurou utilizar recursos sustentáveis e adotar práticas responsáveis, buscando minimizar seu impacto ambiental.
+        </p>
+    </div>
+    <div class="imagem-conteudo">
+        <img src="../img/deck1.jpeg" class="imagem-empresa">
+    </div>
+    
+</div>
+<div class="conteudo-inferior">
+    <div class="imagem-conteudo">
+        <img src="../img/deck1.jpeg" class="imagem-empresa">
+    </div>
+    <div class="campo-texto">
+        <p>
+            Ao longo dos anos, a JrConstruções expandiu gradualmente, sempre com os pés no chão. A empresa ganhou reconhecimento por seu 
+            trabalho árduo, sua honestidade e sua abordagem centrada no cliente. A equipe da JrConstruções orgulha-se de seu compromisso 
+            em cumprir prazos, superar expectativas e entregar projetos de qualidade, independentemente de seu tamanho.
+        </p>
+        <p>
+            Hoje em dia, a JrConstruções continua a crescer e se adaptar às mudanças do mercado. A empresa permanece fiel aos seus 
+            valores fundamentais de integridade, profissionalismo e satisfação do cliente. Cada projeto é encarado como uma nova 
+            oportunidade de aprendizado e aprimoramento, e a equipe está sempre empenhada em entregar o melhor resultado possível.
+        </p>
+        <p>
+            A história da JrConstruções é uma prova de que, com trabalho duro, dedicação e uma mentalidade humilde, é possível alcançar o 
+            sucesso. A empresa valoriza cada passo dado em sua trajetória e está grata pela confiança depositada por seus clientes ao 
+            longo dos anos. A JrConstruções é uma empresa que se mantém verdadeira às suas origens e continua a construir um futuro 
+            promissor, sempre com os pés no chão.
+        </p>
+    </div>
+    
+</div>
 
 <?= $this->endSection() ?>
