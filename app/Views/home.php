@@ -63,16 +63,17 @@
         </div>
         <section class="container-carrossel">
             <div class="imagem-carrossel">
-                <img src="../img/deck2.jpeg" alt="foto1" height="400" width="100%">
-                <img src="../img/construcao.jpeg" alt="foto2" height="400" width="100%">
-                <img src="../img/carpintaria1.jpeg" alt="foto2" height="400" width="100%">
-                <img src="../img/carpintaria1.jpeg" alt="foto2" height="400" width="100%">
+                <img src="../img/deck2.jpeg" alt="foto1" height="100%" width="100%">
+                <img src="../img/construcao.jpeg" alt="foto2" height="100%" width="100%">
+                <img src="../img/carpintaria1.jpeg" alt="foto2" height="100%" width="100%">
+                <img src="../img/carpintaria1.jpeg" alt="foto2" height="100%" width="100%">
             </div>
         </section>
     </div>
     <div class="conteudo-inferior">
         <h2 class="titulo-inferior">Novidades</h2>
         <div class="conteudo-novidades">
+       
             <img src="/uploads/novidades/<?= $novidade[0]["imagem"] ?>" class="imagem-novidade">
             <div class="container-texto-inferior">
                 <?= $novidade[0]["texto"]; ?>
