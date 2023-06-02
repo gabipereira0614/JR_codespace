@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+main{
+    width: 100vw;
+}
+
 /* Campos independentes */
 hr{
     width: 100%;
@@ -133,12 +137,38 @@ p{
 
 /* Tela média */
 @media screen and (min-width: 551px) and (max-width: 720px){
-    
+    .conteudo-central{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .campo-texto{
+        width: 100%;
+    }
+
+    .imagem-conteudo{
+        width: 100%;
+    }
+
+    .imagem-empresa{
+        height: 325px;
+    }
 }
 
 /* Tela grande */
 @media screen and (min-width: 721px) and (max-width: 960px){
+    .conteudo-superior{
+        padding: 9rem 0 0 0;
+    }
 
+    .conteudo-central{
+        padding: 0;
+        margin: 40px 4vw 20px 4vw
+    }
+
+    .imagem-empresa{
+        height: 325px;
+    }
 }
 
 /* Tela grande+ */
