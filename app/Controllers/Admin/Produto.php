@@ -86,7 +86,7 @@ class Produto extends BaseController
             session()->setFlashdata("tipo","danger");
             session()->setFlashdata("mensagem","Erro ao Salvar");
         }
-        return redirect()->to("/admin/produto");
+        return redirect()->to(base_url("/admin/produto"));
     }
 
 
