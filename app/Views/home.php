@@ -73,6 +73,7 @@
     <div class="conteudo-inferior">
         <h2 class="titulo-inferior">Novidades</h2>
         <div class="conteudo-novidades">
+       
             <img src="/uploads/novidades/<?= $novidade[0]["imagem"] ?>" class="imagem-novidade">
             <div class="container-texto-inferior">
                 <?= $novidade[0]["texto"]; ?>
