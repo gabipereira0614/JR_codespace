@@ -41,7 +41,7 @@ p{
     justify-content: space-between;
     height: 50vh;
     background-image: url(../img/fundo-empresa.jpg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position-y: bottom;
     overflow:hidden;
     align-content: center;
