@@ -17,7 +17,7 @@ class Produto extends BaseController
             if (!$produtos) {
                 session()->setFlashdata("tipo", "danger");
                 session()->setFlashdata("mensagem", "produto não encontrado!");
-                return redirect()->to(base_url("/admin/produto"));
+                return redirect()->to(base_url("admin/produto"));
             }
             $data["produto"] = $produtos;
         }

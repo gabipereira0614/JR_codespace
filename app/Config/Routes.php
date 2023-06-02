@@ -66,7 +66,7 @@ $routes->post('logar', 'Admin\Autenticacao::logar');
 
 // produtos
 $routes->get('produto', "Admin\Produto::index");
-$routes->get("admin/produto/(:num)", "Admin\Produto::index/$1");
+$routes->get("produto/(:num)", "Admin\Produto::index/$1");
 $routes->post('produto/salvar', "Admin\Produto::salvar");
 $routes->get('produto/deletar/(:num)', "Admin\Produto::deletar/$1");
 
