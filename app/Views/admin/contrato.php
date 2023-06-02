@@ -13,7 +13,7 @@
     <div class="formulario-contrato">
 
     
-<p>Este contrato de construção  é celebrado entre as partes a seguir:<p><br>
+<h3>Este contrato de construção  é celebrado entre as partes a seguir:</h3><br>
     <input type="nome-contratante" class="inputs" placeholder="nome contratante" name="nome-contratante" id="nome-contratante"><br>
 <p>Endereço:</p> 
     <input type="endereco-contratante" class="inputs" placeholder="endereço contratante" name="endereco-contratante" id="endereco-contratante"><br>
@@ -60,6 +60,12 @@ doravante denominado "Contratado"<br>
 
    Em caso de violação significativa de qualquer uma das partes, o contrato poderá ser rescindido mediante aviso 
   prévio por escrito, fornecendo uma oportunidade razoável para a parte infratora corrigir a violação.
+
+
+  <div class="assinaturas">
+    <div class="contratado"></div>
+    <div class="contratante"></div>
+  </div>
 
 
     </div>
