@@ -30,7 +30,7 @@ if (isset($novidades)) {
         --bs-btn-hover-border-color: #F25D07
     }
 
-    #output {
+    #img-preview {
         width: 400px;
         height: 300px;
         border-radius: 20px;
@@ -47,17 +47,25 @@ if (isset($novidades)) {
         text-align: center;
         align-items: center;
     }
+
+    .conteudo-novidade {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .conteiner-texto {
+        text-indent: 30px;
+        width: 500px;
+        text-align: justify;
+        font-family: 'Lora', 'Arial';
+        font-size: large;
+        max-width: 500px;
+    }
 </style>
 
-<script>
-    var loadFile = function(event) {
-        var output = document.getElementById('output');
-        output.src = URL.createObjectURL(event.target.files[0]);
-        output.onload = function() {
-            URL.revokeObjectURL(output.src) // free memory
-        }
-    };
-</script>
+
 <div class="container">
     <?= form_open_multipart(base_url("/admin/novidades/salvar")) ?>
     <div class="mb-3">
@@ -66,11 +74,11 @@ if (isset($novidades)) {
     </div>
     <div class="mb-3">
         <label for="nome" class="form-label label-titulo">Campo de Texto da novidade:</label>
-        <textarea class="form-control" id="texto" rows="3" name="texto"></textarea>
+        <textarea class="form-control" id="input-texto" rows="3" name="texto" value="oh ma gad"></textarea>
     </div>
     <div class="mb-3">
         <label for="imagem" class="form-label label-titulo">Selecione a Imagem</label>
-        <input type="file" onchange="loadFile(event)" class="form-control" id="imagem" name="imagem" accept=".png, .jpg, .jpeg">
+        <input type="file" onchange="onLoad(event)" class="form-control" id="imagem" name="imagem" accept=".png, .jpg, .jpeg">
     </div>
     <div>
         <button class="btn btn-primary" type="submit">Salvar</button>
@@ -78,14 +86,32 @@ if (isset($novidades)) {
     </div>
     <div class="conteudo">
         <div class="conteudo-novidade">
-            <img id="output" />
+            <img id="img-preview" />
+            <div class="conteiner-texto">
+                <p id="text-preview"></p>
+            </div>
         </div>
     </div>
-
-
     <?= form_close() ?>
 </div>
-<?= form_close() ?>
+
+<script>
+    const textArea = document.getElementById('input-texto');
+    const imgPreview = document.getElementById('img-preview');
+    const textPreview = document.getElementById('text-preview');
+
+    textArea.addEventListener('keyup', (event) => {
+        console.log(event);
+        textPreview.innerText = textArea.value;
+    });
+
+    var onLoad = (event) => {
+        imgPreview.src = URL.createObjectURL(event.target.files[0]);
+        imgPreview.onload = function() {
+            URL.revokeObjectURL(imgPreview.src)
+        }
+    };
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
