@@ -12,7 +12,9 @@
     </div>
     <div class="container-portifolio">
             <?php foreach ($portifolios as $portifolio) : ?>
-                <img src="/uploads/portifolio/<?= $portifolio["imagem"] ?>" alt="Imagem de Portifolio" class="imagem">
+                <div class="conteudo">
+                    <img src="/uploads/portifolio/<?= $portifolio["imagem"] ?>" alt="Imagem de Portifolio" class="imagem">
+                </div>
             <?php endforeach; ?>
     </div>
 </div>
