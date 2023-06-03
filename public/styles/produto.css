@@ -9,14 +9,21 @@
     margin-bottom: 3rem;
 }
 
-    .card-body {
-        text-align: center;
+.card-body {
+    text-align: center;
 }
 
 .card-img-top{
     width: 300px;
-    height: 300px;
+    height: 220px;
+    border: solid #ff8e4d 3px;
+    border-radius: 3px;
 }
+
+a:hover{
+    color:#ff8e4d;
+}
+
 .footer-text{
     margin: 0 15px;
     font-size: small;
