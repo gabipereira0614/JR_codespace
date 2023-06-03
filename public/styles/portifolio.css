@@ -3,7 +3,7 @@
 #conteudo-portifolio{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 150px;
+    padding: 150px 5vw 40px;
     width: 100%;
     
 }
@@ -19,22 +19,40 @@
 .container-portifolio{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 50px;
-    width: 100%;
     height: auto;
+    gap: 2rem;
+    margin-top: 30px;
     justify-content: center;
-    gap: 3rem;
-    margin-bottom: 50px;
+}
+
+.conteudo{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .imagem{
+    transition: 0.6s;
     display: flex;
-    height: 400px;
-    width: 400px;
-    border: solid black 1px;
-    border-radius: 20px;
+    height: 210px;
+    width: 310px;
+    border: solid #ff8e4d 3px;
+    border-radius: 3px;
 }
+
+.imagem:hover{
+    transition: 0.6s;
+    transform: scale(0.97);
+}
+
+/* Se der tempo agnt faz */
+/* h3{
+    margin: 10px;
+    font-family: 'Zen Dots', cursive;
+    font-size: medium;
+} */
+
 /* Tela pequena */
 @media (max-width: 540px){
     .imagem{
