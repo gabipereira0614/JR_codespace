@@ -41,7 +41,7 @@
 
 <footer>
     <p class="footer-text">
-        2023 Jr Construções / Todos os direitos reservados &copy;
+        &copy; Copyright Jr Construções 2023. Direitos reservados.
     </p>
 </footer>
 </body>
