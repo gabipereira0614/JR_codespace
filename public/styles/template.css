@@ -214,3 +214,7 @@ footer{
 /* Tela grande+ */
 @media screen and (min-width: 961px) and (max-width: 1140px){
 }
+
+#toolbarContainer{
+    display: none;
+}

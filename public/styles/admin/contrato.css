@@ -1,6 +1,6 @@
 .formulario-contrato{
     background-color: white;
-    width: 800px;
+    width: 1000px;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -14,9 +14,10 @@
     justify-content: center;
   }
 
-  .inputs{
+  textarea{
     border: 0px;
-    width: 100%;
+    width: 50%;
+    height: fit-content;
   }
 
   p{
@@ -28,17 +29,58 @@
 
   span{
     font-weight: bold;
+    font-size: 20px;
   }
 
-  input{
+  .inputs{
     width: 100%;
     height: auto;
+    border: 0px;
   }
 
-  h3{
+  h2, h3{
     justify-content: center;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    border-bottom: solid;
+   
   }
+
+  .dados-contratante{
+    margin-bottom: 1rem;
+  }
+
+  .dados-contratado{
+    margin-top: 1rem;
+  }
+
+  .assinaturas{
+    margin-top: 2rem;
+    width: 100%;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+
+
+  .contrato{
+    background-color: black;
+    width: 40%;
+    height: 2px;
+    margin-top: 1rem ;
+  }
+
+button{
+  height: 2rem;
+  width: 5.2rem;
+  border-radius: 1rem;
+  border: none;
+  font-family: 'Zen Dots';
+  font-size: 12px;
+}
+
+ 
