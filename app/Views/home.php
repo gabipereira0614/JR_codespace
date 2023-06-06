@@ -13,15 +13,16 @@
     <div class="conteudo-superior">
         <div class="container-texto-superior">
             <h1 class="titulo-superior">Jr<br>Construções</h1><br>
-            <p class="texto-superior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem distinctio ipsam dolores
-                aspernatur eligendi est odit incidunt nostrum obcaecati eos animi cumque repudiandae,
-                laudantium reprehenderit molestias assumenda laboriosam recusandae quisquam?</p>
-            <p class="texto-superior">Molestias magnam labore ratione nobis quod? Commodi vitae, minus quod vero cumque earum,
-                voluptatum exercitationem voluptates eos molestiae omnis placeat consequuntur voluptas
-                itaque excepturi! Minima soluta quod atque voluptatem id?</p>
-            <p class="texto-superior">Cumque recusandae, rem, debitis saepe maiores ipsa distinctio quos enim itaque ullam corporis
-                culpa. Rem iste natus sapiente asperiores consequuntur consequatur harum voluptates
-                quibusdam magnam. Perspiciatis molestias beatae nostrum. Totam?</p>
+            <p class="texto-superior">
+                Bem-vindo(a) à JrConstruções, uma empresa comprometida em transformar sonhos em realidade por meio da construção civil. 
+                Com uma história de determinação e paixão pelo que fazemos, temos o prazer de oferecer soluções construtivas de 
+                qualidade para atender às suas necessidades.
+            </p>
+            <p class="texto-superior">
+                Desde a nossa fundação em 2010, a JrConstruções tem se destacado no mercado por sua abordagem humilde, porém dedicada, 
+                e por seu compromisso com a excelência. Independentemente do tamanho ou da complexidade do projeto, nossa equipe 
+                talentosa de engenheiros, arquitetos e profissionais especializados está pronta para entregar resultados superiores.
+            </p>
         </div>
     </div>
     <div class="conteudo-central">
