@@ -79,7 +79,7 @@ footer{
 }
 
 .footer-text{
-    margin: 0 150px;
+    margin: 0 auto;
     font-family:'Arial' cursive;
     font-weight: 600;
     font-size: larger;

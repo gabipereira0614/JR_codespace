@@ -9,9 +9,13 @@
 @media print{
     .gerarpdf,footer{
         display:none
+
     }
     .contrato{
         border-top: 1px solid black;
+    }
+    .formulario-contrato{
+        margin-top: 6rem;
     }
 }
 

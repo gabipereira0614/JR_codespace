@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
      margin-top: 20vh;
+     padding: 2rem;
   }
 
   fieldset{
@@ -12,6 +13,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    border: none;
   }
 
   textarea{
@@ -75,12 +77,12 @@
   }
 
 button{
-  height: 2rem;
-  width: 5.2rem;
+  padding: .5rem 1rem;
   border-radius: 1rem;
   border: none;
   font-family: 'Zen Dots';
   font-size: 12px;
+  margin: 2rem 0;
 }
 
  
