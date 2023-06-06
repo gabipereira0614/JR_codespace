@@ -95,7 +95,7 @@
     <div class="divisoria"></div>
     <p>
         A história por trás da empresa JrConstruções é uma jornada marcada por desafios, persistência e uma paixão genuína pela 
-        construção. A empresa foi fundada em 1995 por João Rodrigues, um jovem engenheiro cheio de sonhos e determinação.
+        construção. A empresa foi fundada em 2010 por Paulo Cubas do Amaral, um jovem engenheiro cheio de sonhos e determinação.
         João começou sua carreira em empresas de construção, onde aprendeu muito sobre o setor. No entanto, ele sentiu que poderia fazer 
         mais e decidiu arriscar e criar seu próprio negócio. Com poucos recursos financeiros, ele estabeleceu a JrConstruções em um 
         modesto escritório alugado, com apenas um computador e uma mesa improvisada.
@@ -103,7 +103,7 @@
     <div class="campo-texto">
         <p>
             Nos primeiros anos, a JrConstruções enfrentou diversos desafios. Trabalhando principalmente em projetos de pequeno porte, 
-            como reformas residenciais e pequenas construções comerciais, João e sua pequena equipe colocaram todo o seu empenho para 
+            como reformas residenciais e pequenas construções comerciais, Paulo e sua pequena equipe colocaram todo o seu empenho para 
             entregar resultados de qualidade aos clientes.
         </p>
         <p>
@@ -112,7 +112,7 @@
             esforçaram para oferecer soluções criativas e eficientes aos seus clientes.
         </p>
         <p>
-            A JrConstruções valorizou cada oportunidade que teve para aprender e crescer. João entendeu a importância de investir em 
+            A JrConstruções valorizou cada oportunidade que teve para aprender e crescer. Paulo entendeu a importância de investir em 
             talentos e contratou profissionais dedicados, que compartilhavam da sua visão e paixão pela construção. A empresa também 
             procurou utilizar recursos sustentáveis e adotar práticas responsáveis, buscando minimizar seu impacto ambiental.
         </p>
