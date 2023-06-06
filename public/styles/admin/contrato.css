@@ -38,6 +38,12 @@
     width: 100%;
     height: auto;
     border: 0px;
+    font-family: Arial;
+    font-size: 10;
+  }
+  .inputs:focus-visible {
+    outline: none;
+    border: none;
   }
 
   h2, h3{
