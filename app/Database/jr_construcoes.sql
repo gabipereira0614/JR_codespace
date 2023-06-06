@@ -2,14 +2,14 @@
 -- Estrutura da tabela cliente
 --
 
-CREATE TABLE cliente (
-  id_CLIENTE int(11) NOT NULL AUTO_INCREMENT,
-  nome_usuario varchar(30) NOT NULL,
-  email varchar(100) NOT NULL,
- senha char(8) NOT NULL,
-  endereco varchar(50) NOT NULL,
-  PRIMARY KEY (id_CLIENTE)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+-- CREATE TABLE cliente (
+--   id_CLIENTE int(11) NOT NULL AUTO_INCREMENT,
+--   nome_usuario varchar(30) NOT NULL,
+--   email varchar(100) NOT NULL,
+--  senha char(8) NOT NULL,
+--   endereco varchar(50) NOT NULL,
+--   PRIMARY KEY (id_CLIENTE)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -31,25 +31,17 @@ CREATE TABLE cliente (
 -- Estrutura da tabela funcionario
 --
 
-CREATE TABLE  funcionario (
-  id_funcionario int(11) NOT NULL AUTO_INCREMENT,
-  nome varchar(50) NOT NULL,
-  senha char(10) NOT NULL,
-  telefone char(11) NOT NULL,
-  fk_adm int(11) DEFAULT NULL,
-  PRIMARY KEY (id_funcionario),
-  KEY fk_adm (fk_adm)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+-- CREATE TABLE  funcionario (
+--   id_funcionario int(11) NOT NULL AUTO_INCREMENT,
+--   nome varchar(50) NOT NULL,
+--   senha char(10) NOT NULL,
+--   telefone char(11) NOT NULL,
+--   fk_adm int(11) DEFAULT NULL,
+--   PRIMARY KEY (id_funcionario),
+--   KEY fk_adm (fk_adm)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
-CREATE TABLE  adm (
-  id_adm int(11) NOT NULL AUTO_INCREMENT,
-  nome varchar(50) NOT NULL,
-  email varchar(90) NOT NULL,
-  senha char(60) NOT NULL,
-  telefone char(11) NOT NULL,
-  PRIMARY KEY (id_adm)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
 
@@ -65,13 +57,13 @@ CREATE TABLE  adm (
 
 --
 -- Estrutura da tabela pedido
---
+-- --
 
-CREATE TABLE  pedido (
-  id_pedido int(11) NOT NULL AUTO_INCREMENT,
-  data_pedido date NOT NULL,
-  PRIMARY KEY (id_pedido)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+-- CREATE TABLE  pedido (
+--   id_pedido int(11) NOT NULL AUTO_INCREMENT,
+--   data_pedido date NOT NULL,
+--   PRIMARY KEY (id_pedido)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -79,12 +71,22 @@ CREATE TABLE  pedido (
 -- Estrutura da tabela pedido_produto
 --
 
-CREATE TABLE  pedido_produto (
-  fk_pedido int(11) NOT NULL,
-  fk_produto int(11) NOT NULL,
-  PRIMARY KEY (fk_pedido,fk_produto),
-  KEY produto (fk_produto)
+-- CREATE TABLE  pedido_produto (
+--   fk_pedido int(11) NOT NULL,
+--   fk_produto int(11) NOT NULL,
+--   PRIMARY KEY (fk_pedido,fk_produto),
+--   KEY produto (fk_produto)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE  adm (
+  id_adm int(11) NOT NULL AUTO_INCREMENT,
+  nome varchar(50) NOT NULL,
+  email varchar(90) NOT NULL,
+  senha char(60) NOT NULL,
+  telefone char(11) NOT NULL,
+  PRIMARY KEY (id_adm)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 CREATE TABLE novidades(
   idnovidade INT NOT NULL AUTO_INCREMENT,

@@ -15,7 +15,7 @@
                     <p class="card-text"><strong>Preço:</strong> R$ <?= $produto["preco"] ?></p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <a type="button" class="btn btn-sm btn-outline-secondary" href="./contato">Fale Conosco</a>
+                            <a type="button" class="btn btn-sm btn-outline-secondary" href="https://wa.me/5515997556048?text=tenho%20interesse%20no%20produto <?= $produto["nome_produto"] ?>">Fale Conosco</a>
                         </div>
                     </div>
                 </div>
