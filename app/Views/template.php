@@ -45,4 +45,13 @@
     </p>
 </footer>
 </body>
+
+<script type="text/javascript">
+    for (var i = 0; i < document.links.length; i++) {
+        if (document.links[i].href == document.URL) {
+            document.links[i].className = 'linkAtivo';
+        }
+    }
+</script>
+
 </html>
