@@ -11,12 +11,16 @@
             <legend>
                 <img class="imagem-logo" src="./img/perfil-de-usuario.png" alt="">
             </legend>
+                
             <div class="formulario-login">
                 <?php if (session()->has("tipo")) : ?>
                 <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
                 <?= session("aviso") ?>
             </div>
                 <?php endif; ?>
+                <div class="aviso">
+                    O login é de uso exclusivo de administradores.
+                </div>
                 <input type="email" class="inputs" placeholder="Email" name="email">
                 <input type="password" class="inputs" placeholder="Senha" name="senha">
                 <button type="submit" class="botao-entrar">ENTRAR</button>

@@ -44,11 +44,20 @@ fieldset{
     margin-top: 120px;
     border: solid black 1.5px;
 }
+
+.aviso{
+    display: flex;
+    font-family: 'Zen Dots';
+    font-size: small;
+    text-align: center;
+}
+
 legend{
     display: flex;
     justify-content: center;
     text-align: center;
 }
+
 .container-login, .container-cadastro {
     flex-wrap: wrap;
     display: flex;
@@ -87,14 +96,13 @@ legend{
 }
 
 .formulario-login {
-
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    width: 200px;
+    height: 195px;
+    width: 250px;
 }
 
 .imagem-logo {
