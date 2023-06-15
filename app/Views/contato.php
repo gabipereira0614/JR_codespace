@@ -36,7 +36,7 @@
             <div class="text-inferior">Onde Nos Encontrar?</div>
             <div class="centralizar-contato">
                 <div class="text-local">Cidade: Cesario,<br>
-                    Bairro: Cesario @bairro, <br>
+                    Bairro: Dom Lázaro, <br>
                     Rua: Lázaro Antunes de Miranda, <br>
                     Nº: 443, <br>
                     CEP: 18285-000
