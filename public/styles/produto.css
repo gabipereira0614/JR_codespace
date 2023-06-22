@@ -1,3 +1,7 @@
+main{
+    min-height: 95vh;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;

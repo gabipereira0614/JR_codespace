@@ -1,3 +1,7 @@
+main{
+    min-height: 75vh;
+}
+
 .btn-warning {
     --bs-btn-bg: #F25D07 !important;
     --bs-btn-hover-bg: #F25D07 !important;

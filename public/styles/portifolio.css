@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Nerko+One&family=Zen+Dots&display=swap');
 
+main{
+    min-height: 95vh;
+}
+
 #conteudo-portifolio{
     display: flex;
     flex-wrap: wrap;
